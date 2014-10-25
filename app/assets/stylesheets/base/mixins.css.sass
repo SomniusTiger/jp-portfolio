@@ -1,0 +1,117 @@
+// General helpful mixins
+
+// Breakpoint mixin for responsiveness
+=breakpoint($max-size)
+  @media only screen and (max-width: $max-size)
+    @content
+
+// Helpful CSS Animation mixins
+=keyframes($name)
+  @-o-keyframes #{$name} 
+    @content
+  @-moz-keyframes #{$name} 
+    @content
+  @-webkit-keyframes #{$name} 
+    @content 
+  @-keyframes #{$name} 
+    @content
+
+=animation-name($name...)
+  -o-animation-name: $name
+  -moz-animation-name: $name
+  -webkit-animation-name: $name
+  animation-name: $name
+
+=animation-duration($duration...)
+  -o-animation-duration: $duration
+  -moz-animation-duration: $duration
+  -webkit-animation-duration: $duration
+  animation-duration: $duration
+
+=animation-duration($duration...)
+  -o-animation-duration: $duration
+  -moz-animation-duration: $duration
+  -webkit-animation-duration: $duration
+  animation-duration: $duration
+
+=animation-timing-function($timing...)
+  -o-animation-timing-function: $timing
+  -moz-animation-timing-function: $timing
+  -webkit-animation-timing-function: $timing
+  animation-timing-function: $timing
+
+=animation-iteration-count($count...)
+  -o-animation-iteration-count: $count
+  -moz-animation-iteration-count: $count
+  -webkit-animation-iteration-count: $count
+  animation-iteration-count: $count
+
+=animation-direction($direction...)
+  -o-animation-direction: $direction
+  -moz-animation-direction: $direction
+  -webkit-animation-direction: $direction
+  animation-direction: $direction
+
+=animation-fill-mode($fill...)
+  -o-animation-fill-mode: $fill
+  -moz-animation-fill-mode: $fill
+  -webkit-animation-fill-mode: $fill
+  animation-fill-mode: $fill
+
+=animation-play-state($state...)
+  -o-animation-play-state: $state
+  -moz-animation-play-state: $state
+  -webkit-animation-play-state: $state
+  animation-play-state: $state
+
+=animation($animation...)
+  -o-animation: $animation
+  -moz-animation: $animation
+  -webkit-animation: $animation
+  animation: $animation
+
+
+// Transition mixin
+=transition($transition-property, $transition-time, $method) 
+  -webkit-transition: $transition-property $transition-time $method
+  -moz-transition: $transition-property $transition-time $method
+  -ms-transition: $transition-property $transition-time $method
+  -o-transition: $transition-property $transition-time $method
+  transition: $transition-property $transition-time $method
+
+// Easily import fonts
+=declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) 
+  @font-face 
+    font-family: '#{$font-family}'
+    src: url(font-path('#{$font-filename}.eot'))
+    src: url(font-path('#{$font-filename}.eot?#iefix')) format('embedded-opentype'), url(font-path('#{$font-filename}.woff')) format('woff'), url(font-path('#{$font-filename}.svg##{$font-family}')) format('svg')
+    font-weight: $font-weight
+    font-style: $font-style
+    font-stretch: $font-stretch
+
+// Don't let padding affect element size
+=box-sizing($box-sizing: border-box)
+  -webkit-box-sizing: $box-sizing
+  -moz-box-sizing: $box-sizing
+  -o-box-sizing: $box-sizing
+  box-sizing: $box-sizing
+
+=box-shadow($x, $y, $blur, $color, $inset:"")
+  -webkit-box-shadow: $x $y $blur $color #{$inset}
+  -moz-box-shadow:    $x $y $blur $color #{$inset}
+  box-shadow:         $x $y $blur $color #{$inset}
+
+=border-radius($borderTopLeft, $borderTopRight: $borderTopLeft, $borderBotRight: $borderTopLeft, $borderBotLeft: $borderTopLeft)
+  -webkit-border-radius: $borderTopLeft $borderTopRight $borderBotRight $borderBotLeft
+  -moz-border-radius: $borderTopLeft $borderTopRight $borderBotRight $borderBotLeft
+  -o-border-radius: $borderTopLeft $borderTopRight $borderBotRight $borderBotLeft
+  border-radius: $borderTopLeft $borderTopRight $borderBotRight $borderBotLeft
+
+// Anti-alias font smoothing
+=anti-alias()
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  -moz-font-smoothing: antialiased
+  -ms-font-smoothing: antialiased
+  -o-font-smoothing: antialiased
+  font-smoothing: antialiased

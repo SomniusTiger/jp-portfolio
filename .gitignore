@@ -20,3 +20,6 @@
 
 # Ignore workspace file
 *.sublime-workspace
+
+# Ignore sidecar files
+.DS_Store

@@ -2,38 +2,40 @@
 
 .intro-card
   .container
-    .intro-card-text
-      %h1.intro-card-title.wow.fadeInLeft JP Fairchild
-      %h2.intro-card-subtitle.wow.fadeIn{:data => {'wow-delay' => "1s"}} New Media Designer
-      %p.intro-card-details.wow.fadeIn{:data => {'wow-delay' => "1s"}} A Passion for Design, Tech and Life
-      .intro-card-down-arrows.wow.fadeInDown{:data => {'wow-delay' => "2s"}}
-        = image_tag "double_carat-down.svg", width: "100%"
+    .content
+      .intro-card-text
+        %h1.intro-card-title.wow.fadeInLeft JP Fairchild
+        %h2.intro-card-subtitle.wow.fadeIn{:data => {'wow-delay' => "1s"}} New Media Designer
+        %p.intro-card-details.wow.fadeIn{:data => {'wow-delay' => "1s"}} A Passion for Design, Tech and Life
+        .intro-card-down-arrows.wow.fadeInDown{:data => {'wow-delay' => "2s"}}
+          = image_tag "double_carat-down.svg", width: "100%"
 
-.intro-card-blue
+.intro-card.intro-card-blue
   .container
-    .rocket-ship
-      = image_tag "rocket-ship.svg", width: "100%", class: "wow fadeInUp"
-    .intro-card-descript.wow.fadeIn{:data => {'wow-delay' => "0.5s"}}
-      %h2.intro-card-small_title Interactive &amp; Motion Designer
-      %p.intro-card-small_details I am an Interaction Designer who craves designing awesome user experiences. I do UI, UX and Motion.
-    .clouds
-      = image_tag "clouds.svg", width: "100%", class: "wow zoomIn"
+    .content.full-height
+      .rocket-ship.wow.fadeInUp
+        = image_tag "rocket-ship.svg", width: "100%"
+      .intro-card-descript.wow.fadeIn{:data => {'wow-delay' => "0.5s"}}
+        %h2.intro-card-small_title Interactive &amp; Motion Designer
+        %p.intro-card-small_details I am an Interaction Designer who craves designing awesome user experiences. I do UI, UX and Motion.
+      .clouds
+        = image_tag "clouds.svg", width: "100%", class: "wow zoomIn"
 
-.intro-card-blue
+.intro-card.intro-card-blue
   .container
-    .computer-card
-      .grid-half
-        .intro-card-descript.wow.fadeIn
-          %h2.intro-card-small_title I Get Excited
-          %p.intro-card-small_details I love being inspired. I get inspired by Movies, Websites, Designs, anything that comes off the screen and makes me scream, laugh or cry.
-      .grid-half
-        .computer.wow.fadeInRight
-          .computer-illustrations
-            .space.wow.fadeIn{:data => {'wow-delay' => "1s"}}
-              = image_tag "space.svg"
-            .snowboard.wow.fadeIn{:data => {'wow-delay' => "1.5s"}}
-              = image_tag "snowboard.svg"
+    .content
+      .grid-container
+        .grid-half
+          .intro-card-descript.wow.fadeIn
+            %h2.intro-card-small_title I Get Excited
+            %p.intro-card-small_details I love being inspired. I get inspired by Movies, Websites, Designs, anything that comes off the screen and makes me scream, laugh or cry.
+        .grid-half
+          .computer.wow.fadeInRight
+            .computer-illustrations
+              .space.wow.fadeIn{:data => {'wow-delay' => "1s"}}
+                = image_tag "space.svg"
+              .snowboard.wow.fadeIn{:data => {'wow-delay' => "1.5s"}}
+                = image_tag "snowboard.svg"
 
-          = image_tag "computer.svg"
-      .clear
+            = image_tag "computer.svg"
 

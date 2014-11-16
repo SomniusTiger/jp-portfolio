@@ -2,9 +2,7 @@
 // main website
 
 .intro-card
-  display: block
   height: 100%
-  line-height: 800px
   text-align: center
   width: 100%
 
@@ -12,13 +10,9 @@
   +anti-alias()
   background-color: $color-blue
   color: $color-white
-  display: block
-  text-align: center
-  width: 100%
 
 .intro-card-text
   display: inline-block
-  line-height: normal
   margin: 0 auto
   text-align: left
   vertical-align: middle
@@ -50,44 +44,42 @@
 
 .intro-card-down-arrows
   display: block
-  line-height: normal
+  // line-height: normal
   margin: 6rem auto -12rem auto
   width: 6rem
 
 .rocket-ship
   margin: 0 auto 
-  padding: 7rem 0
+  padding: 11rem 0
+  position: relative
+  top: 0
   width: 6rem
 
 .clouds
+  bottom: 0
+  left: 20%
   margin: 0 auto
-  padding-top: 7rem
-  max-width: 400px
-
-.computer-card
-  display: table
-  padding: 3rem 0
-  width: 100%
-
-  .grid-half
-    display: table-cell
-    vertical-align: middle
+  position: absolute
+  width: 60%
 
 .computer
+  left: 15%
   position: relative
   width: 100%
 
 .computer-illustrations
   position: absolute
+  right: 20%
+  top: 10%
   width: 100%
 
 .space
   left: -15%
-  margin-top: 3rem
   position: relative
   width: 65%
 
 .snowboard
-  margin-top: 3rem
+  margin-top: 5%
   position: relative
+  right: 10%
   width: 60%

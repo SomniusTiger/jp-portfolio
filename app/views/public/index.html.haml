@@ -23,15 +23,15 @@
   .container
     .computer-card
       .grid-half
-        .intro-card-descript
+        .intro-card-descript.wow.fadeIn
           %h2.intro-card-small_title I Get Excited
           %p.intro-card-small_details I love being inspired. I get inspired by Movies, Websites, Designs, anything that comes off the screen and makes me scream, laugh or cry.
       .grid-half
-        .computer
+        .computer.wow.fadeInRight
           .computer-illustrations
-            .space
+            .space.wow.fadeIn{:data => {'wow-delay' => "1s"}}
               = image_tag "space.svg"
-            .snowboard
+            .snowboard.wow.fadeIn{:data => {'wow-delay' => "1.5s"}}
               = image_tag "snowboard.svg"
 
           = image_tag "computer.svg"

@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require animation/wow.min
+//= require animation/homepage-scroll-animation
+//= require layout/intro-card

@@ -13,9 +13,9 @@
 .intro-card.intro-card-blue
   .container
     .content.full-height
-      .rocket-ship.wow.fadeInUp
-        = image_tag "rocket-ship.svg", width: "100%"
-      .intro-card-descript.wow.fadeIn{:data => {'wow-delay' => "0.5s"}}
+      .rocket-ship
+        = image_tag "rocket-ship.svg", width: "100%", class: "halfWow fadeInUp"
+      .intro-card-descript.halfWow.fadeIn{:data => {'wow-delay' => "0.5s"}}
         %h2.intro-card-small_title Interactive &amp; Motion Designer
         %p.intro-card-small_details I am an Interaction Designer who craves designing awesome user experiences. I do UI, UX and Motion.
       .clouds
@@ -26,13 +26,13 @@
     .content
       .grid-container
         .grid-half
-          .intro-card-descript.wow.fadeIn
+          .intro-card-descript.halfWow.fadeIn
             %h2.intro-card-small_title I Get Excited
             %p.intro-card-small_details I love being inspired. I get inspired by Movies, Websites, Designs, anything that comes off the screen and makes me scream, laugh or cry.
         .grid-half
-          .computer.wow.fadeInRight
+          .computer.halfWow.fadeInRight
             .computer-illustrations
-              .space.wow.fadeIn{:data => {'wow-delay' => "1s"}}
+              .space.halfWow.fadeIn{:data => {'wow-delay' => "1s"}}
                 = image_tag "space.svg"
               .snowboard.wow.fadeIn{:data => {'wow-delay' => "1.5s"}}
                 = image_tag "snowboard.svg"

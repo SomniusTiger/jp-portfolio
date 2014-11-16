@@ -2,5 +2,14 @@
 
 $(function() {
   // Init WOW.js
-  new WOW().init();
+  var halfWow = new WOW({
+    boxClass: 'halfWow',
+    offset: $(window).height()/2
+  });
+
+  halfWow.init();
+
+  var wow = new WOW();
+  wow.init();
+
 });

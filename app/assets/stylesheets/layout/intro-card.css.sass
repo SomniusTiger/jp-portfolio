@@ -2,26 +2,26 @@
 // main website
 
 .intro-card
-  width: 100%
-  line-height: 800px
-  min-height: 500px
   display: block
+  height: 100%
+  line-height: 800px
   text-align: center
+  width: 100%
 
 .intro-card-blue
-  width: 100%
+  +anti-alias()
+  background-color: $color-blue
+  color: $color-white
   display: block
   text-align: center
-  color: $color-white
-  background-color: $color-blue
-  +anti-alias()
+  width: 100%
 
 .intro-card-text
   display: inline-block
+  line-height: normal
   margin: 0 auto
   text-align: left
   vertical-align: middle
-  line-height: normal
 
 .intro-card-descript
   @extend .intro-card-text
@@ -29,9 +29,9 @@
 
 // Text inside of the intro card
 .intro-card-title
+  color: $color-blue
   font-size: 2.1em
   line-height: 1.4em
-  color: $color-blue
 
 .intro-card-subtitle
   font-size: 1.3em
@@ -49,14 +49,14 @@
   font-size: 1em
 
 .intro-card-down-arrows
-  margin: 6rem auto -12rem auto
-  width: 6rem
   display: block
   line-height: normal
+  margin: 6rem auto -12rem auto
+  width: 6rem
 
 .rocket-ship
-  padding: 7rem 0
   margin: 0 auto 
+  padding: 7rem 0
   width: 6rem
 
 .clouds

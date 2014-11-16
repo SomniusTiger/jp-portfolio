@@ -15,13 +15,13 @@
     .content.full-height
       .rocket-ship
         = image_tag "rocket-ship.svg", width: "100%", class: "halfWow fadeInUp"
-      .intro-card-descript.halfWow.fadeIn{:data => {'wow-delay' => "0.5s"}}
+      .intro-card-descript.intro-card-descript-middle.halfWow.fadeIn
         %h2.intro-card-small_title Interactive &amp; Motion Designer
         %p.intro-card-small_details I am an Interaction Designer who craves designing awesome user experiences. I do UI, UX and Motion.
       .clouds
         = image_tag "clouds.svg", width: "100%", class: "wow zoomIn"
 
-.intro-card.intro-card-blue
+.intro-card.intro-card-blue.computer-card
   .container
     .content
       .grid-container
@@ -37,5 +37,5 @@
               .snowboard.wow.fadeIn{:data => {'wow-delay' => "1.5s"}}
                 = image_tag "snowboard.svg"
 
-            = image_tag "computer.svg"
+            = image_tag "computer.svg", class: "computer-img"
 

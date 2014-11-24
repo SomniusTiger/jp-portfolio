@@ -4,3 +4,28 @@
 $color-white:   #fff
 $color-black:   #434244
 $color-blue:    #2da8e0
+
+// Project Colors
+$color-peach:   #f6af93
+
+// Classes to apply colors
+
+// Text Colors
+.text-color-white
+  color: $color-white
+
+// Background Colors
+.bg-color-white
+  background-color: $color-white
+.bg-color-black
+  +anti-alias()
+  @extend .text-color-white
+  background-color: $color-black
+.bg-color-blue
+  +anti-alias()
+  @extend .text-color-white
+  background-color: $color-blue
+.bg-color-peach
+  +anti-alias()
+  @extend .text-color-white
+  background-color: $color-peach

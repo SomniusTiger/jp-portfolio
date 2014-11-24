@@ -7,6 +7,8 @@ $color-blue:    #2da8e0
 
 // Project Colors
 $color-peach:   #f6af93
+$color-grey:    #e6e6e6
+$color-orange:  #df5b37
 
 // Classes to apply colors
 
@@ -17,6 +19,8 @@ $color-peach:   #f6af93
 // Background Colors
 .bg-color-white
   background-color: $color-white
+.bg-color-grey
+  background-color: $color-grey
 .bg-color-black
   +anti-alias()
   @extend .text-color-white
@@ -29,3 +33,8 @@ $color-peach:   #f6af93
   +anti-alias()
   @extend .text-color-white
   background-color: $color-peach
+
+.bg-color-orange
+  +anti-alias()
+  @extend .text-color-white
+  background-color: $color-orange

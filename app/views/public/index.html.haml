@@ -13,56 +13,61 @@
 .project-previews
   .project-preview.bg-color-peach
     .project-preview-content
-      .grid-container
-        .grid-half
-          .project-preview-leftalign-image
-            = image_tag "reel2reel.png", width: "120%"
-        .grid-half
-          .project-preview-text
-            %h2 Brooklyn United Reel
-            %br/
-            %p During my time at Brooklyn United, I animated their 2014 reel containing work the design team and I had done for clients rainging from AT&T to local bars. 
+      = link_to :bu_reel do
+        .grid-container
+          .grid-half
+            .project-preview-leftalign-image
+              = image_tag "reel2reel.png", width: "120%"
+          .grid-half
+            .project-preview-text
+              %h2 Brooklyn United Reel
+              %br/
+              %p During my time at Brooklyn United, I animated their 2014 reel containing work the design team and I had done for clients rainging from AT&T to local bars. 
 
   .project-preview.bg-color-white
     .project-preview-content
-      .grid-container
-        .grid-half
-          .project-preview-text
-            %h2 Tap of War
-            %br/
-            %p This is an App currently out on the IOS Store that I made with two friends.
-        .grid-half
-          = image_tag "iphone-vinylapp.png", width: "100%"
+      = link_to :tap_of_war do
+        .grid-container
+          .grid-half
+            .project-preview-text
+              %h2 Tap of War
+              %br/
+              %p This is an App currently out on the IOS Store that I made with two friends.
+          .grid-half
+            = image_tag "iphone-vinylapp.png", width: "100%"
 
   .project-preview.bg-color-grey
     .project-preview-content
-      .grid-container
-        .grid-half
-          = image_tag "battle-rifle.png", width: "100%"
-        .grid-half
-          .project-preview-text
-            %h2 Illustrations
-            %br/
-            %p I love doing flat illustrations, especially when they are things from movies that inspired me.  
+      = link_to :illustrations do
+        .grid-container
+          .grid-half
+            = image_tag "battle-rifle.png", width: "100%"
+          .grid-half
+            .project-preview-text
+              %h2 Illustrations
+              %br/
+              %p I love doing flat illustrations, especially when they are things from movies that inspired me.  
 
   .project-preview.bg-color-white
     .project-preview-content
-      .grid-container
-        .grid-half
-          .project-preview-text
-            %h2 Vinyl Music
-            %br/
-            %p Also at Brooklyn United, I was tasked with designing a skin for a music app that would play a vinyl record when playing your library of music. 
-        .grid-half
-          = image_tag "iphone-vinylapp.png", width: "100%"
+      = link_to :vinyl_music do
+        .grid-container
+          .grid-half
+            .project-preview-text
+              %h2 Vinyl Music
+              %br/
+              %p Also at Brooklyn United, I was tasked with designing a skin for a music app that would play a vinyl record when playing your library of music. 
+          .grid-half
+            = image_tag "iphone-vinylapp.png", width: "100%"
 
   .project-preview.bg-color-orange
     .project-preview-content
-      .grid-container
-        .grid-half
-          = image_tag "dsb.png", width: "100%"
-        .grid-half
-          .project-preview-text
-            %h2 Designer Sketchbooks
-            %br/
-            %p I started a company making specalized sketchbooks for designers. It has grown from just me to a company of four, doing signage, stationery, business planning, logos, User Experiences with customers, branding, and everything else involved in making a business.
+      = link_to :dsb do
+        .grid-container
+          .grid-half
+            = image_tag "dsb.png", width: "100%"
+          .grid-half
+            .project-preview-text
+              %h2 Designer Sketchbooks
+              %br/
+              %p I started a company making specalized sketchbooks for designers. It has grown from just me to a company of four, doing signage, stationery, business planning, logos, User Experiences with customers, branding, and everything else involved in making a business.

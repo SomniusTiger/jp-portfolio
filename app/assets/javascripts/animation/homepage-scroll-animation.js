@@ -21,5 +21,5 @@ $(function() {
 function scrollOnClick() {
   $('html, body').animate({
     scrollTop: $(window).height()
-  }, 400);
+  }, 1000, 'linear');
 }

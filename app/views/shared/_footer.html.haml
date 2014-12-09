@@ -1,2 +1,23 @@
 %footer
-  %p Copyright JP Fairchild 2014
+  = image_tag "jp-white.png", width: "75px", alt: "", class: "footer-logo"
+  .footer-social
+    = link_to "https://twitter.com/jpfairchild", target: "_blank" do
+      .fa-stack
+        = fa_icon "square", class: "fa-stack-2x"
+        = fa_icon "twitter", class: "fa-stack-1x fa-lg text-color-black"
+    = link_to "https://dribbble.com/jpfairchild", target: "_blank" do
+      .fa-stack
+        = fa_icon "square", class: "fa-stack-2x"
+        = fa_icon "dribbble", class: "fa-stack-1x fa-lg text-color-black"
+    = link_to "www.linkedin.com/in/jpfairchild", target: "_blank" do
+      .fa-stack
+        = fa_icon "square", class: "fa-stack-2x"
+        = fa_icon "linkedin", class: "fa-stack-1x fa-lg text-color-black"
+    = link_to "http://pinterest.com/jpfairchild", target: "_blank" do
+      .fa-stack
+        = fa_icon "square", class: "fa-stack-2x"
+        = fa_icon "pinterest", class: "fa-stack-1x fa-lg text-color-black"
+    = link_to "https://last.fm/user/jpmeister", target: "_blank" do
+      .fa-stack
+        = fa_icon "square", class: "fa-stack-2x"
+        = fa_icon "lastfm", class: "fa-stack-1x fa-lg text-color-black"

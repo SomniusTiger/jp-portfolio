@@ -11,7 +11,7 @@
   width: 100%
 
   img
-    +transition(all, 300ms, ease-in-out)
+    +transition(margin-left, 300ms, ease-in-out)
 
 .project-preview-content
   @extend .container
@@ -25,6 +25,7 @@
   position: relative
 
 .project-preview-text
-  +transition(all, 300ms, ease-in-out)
+  +transition(opacity, 300ms, ease-in-out)
   margin: 0 auto
   max-width: 400px
+  opacity: 0.6

@@ -12,4 +12,14 @@ $(function() {
   var wow = new WOW();
   wow.init();
 
+  $('.intro-card-down-arrows').click(function(){
+    scrollOnClick();
+  });
+
 });
+
+function scrollOnClick() {
+  $('html, body').animate({
+    scrollTop: $(window).height()
+  }, 400);
+}

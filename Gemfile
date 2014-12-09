@@ -34,6 +34,8 @@ gem 'sass'
 gem 'font-awesome-rails'
 # Inline code debugging
 gem 'pry', :group => :development
+# jQuery UI niftiness and easing
+gem 'jquery-ui-rails'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

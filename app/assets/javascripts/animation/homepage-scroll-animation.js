@@ -21,5 +21,5 @@ $(function() {
 function scrollOnClick() {
   $('html, body').animate({
     scrollTop: $(window).height()
-  }, 1000, 'swing');
+  }, 1000, 'easeInOutQuint');
 }

@@ -1,7 +1,10 @@
 // All styles having to do with the omnipresent header
 
 header
+  +translateZ(0)
+  +transition(left, 300ms, $ease-out-quint)
   +box-shadow(0, 1px, 4px, $color-shadow)
+  left: 0
   position: fixed
   top: 2rem
   z-index: 100
@@ -15,6 +18,10 @@ header
   float: left
   font-size: 1.3em
   padding: 1.3rem
+  position: relative
+
+  .fa.fa-times
+    width: 18px
 
 .header-title
   background-color: $color-white
@@ -23,3 +30,4 @@ header
   float: left
   font-size: 1.3em
   padding: 1.3rem 2.5rem
+  position: relative

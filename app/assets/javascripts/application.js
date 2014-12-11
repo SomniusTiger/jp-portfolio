@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
-//= require animation/wow.min
-//= require animation/homepage-scroll-animation
+//= require state/wow.min
+//= require state/homepage-scroll-animation
+//= require state/dropdown
 //= require layout/intro-card

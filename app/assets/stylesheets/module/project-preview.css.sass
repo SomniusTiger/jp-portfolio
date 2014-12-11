@@ -8,8 +8,12 @@
   height: 630px
   width: 100%
 
-  img
-    +transition(margin-left, 300ms, ease-out)
+  &.left, &.right
+    img
+      +translateZ(0)
+      +transition(left, 300ms, ease-out)
+      left: 0
+      position: relative
 
 .project-preview-content
   @extend .container
@@ -23,6 +27,7 @@
   position: relative
 
 .project-preview-text
+  +translateZ(0)
   +transition(opacity, 300ms, ease-out)
   margin: 0 auto
   max-width: 400px

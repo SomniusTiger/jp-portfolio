@@ -36,6 +36,8 @@ gem 'font-awesome-rails'
 gem 'pry', :group => :development
 # jQuery UI niftiness and easing
 gem 'jquery-ui-rails'
+# Awesome mixin library for SASS
+gem 'compass-rails'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

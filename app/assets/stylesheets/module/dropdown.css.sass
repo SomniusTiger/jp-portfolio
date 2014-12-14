@@ -1,10 +1,42 @@
 // Styles to do with the header dropdown
 
 .dropdown-menu
+  +anti-alias()
   +transition(left, 300ms, $ease-out-quint)
   background-color: $color-blue
+  border-right: solid 1px darken($color-blue, 15%)
+  color: $color-white
   height: 100%
   left: -20rem
   position: fixed
   width: 20rem
   z-index: 30
+
+ul.header-main-dropdown
+  li
+    a, .dropdown-title
+      +box-sizing(border-box)
+      display: block
+      padding: 1.5rem 2.5rem
+      text-transform: uppercase
+      width: 100%
+
+    a
+      +transition(background-color, 300ms, $ease-out-quint)
+
+      &:hover
+        +opacity(1)
+        background-color: darken($color-blue, 15%)
+
+    .dropdown-title
+      font-weight: bold
+
+ul.header-social-dropdown
+  li
+    a
+      text-transform: none
+
+      .fa
+        font-size: 2em
+        margin-right: 1rem
+        vertical-align: middle

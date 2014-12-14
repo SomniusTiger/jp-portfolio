@@ -1,6 +1,10 @@
 // Styles to do with the header dropdown
 
 .dropdown-menu
-  display: none
-  left: 0
+  +transition(left, 300ms, $ease-out-quint)
+  background-color: $color-blue
+  height: 100%
+  left: -20rem
   position: fixed
+  width: 20rem
+  z-index: 30

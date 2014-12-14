@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery-ui
+//= require jquery-ui/effect
 //= require state/wow.min
 //= require state/homepage-scroll-animation
 //= require state/dropdown

@@ -1,0 +1,27 @@
+// Responsive styles for the homepage
+
++breakpoint($breakpoint-lg)
+  .project-preview
+    height: auto
+
+    &:hover
+      &.left, &.right
+        img
+          left: 0
+
+    .project-preview-content
+      .grid-container
+        display: block
+        padding: 4rem 0
+
+  .grid-half.image
+    display: table-header-group
+    width: 100%
+
+  .grid-half.text
+    display: table-footer-group
+    width: 100%
+
+    .project-preview-text
+      margin-top: 2rem
+      opacity: 1

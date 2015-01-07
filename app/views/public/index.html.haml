@@ -11,63 +11,22 @@
           = image_tag "double_carat-down.svg", width: "100%"
 
 .project-previews
-  .project-preview.bg-color-peach.left
-    .project-preview-content
-      = link_to bu_reel_path do
-        .grid-container
-          .grid-half.image
-            .project-preview-leftalign-image
-              = image_tag "reel2reel.png", width: "120%"
-          .grid-half.text
-            .project-preview-text.project-preview-leftalign-text
-              %h2 Brooklyn United Reel
-              %br/
-              %p During my time at Brooklyn United I animated their 2014 reel, containing work the design team and I had done. The reel features work for both large and small clients such as AT&T and even local bars.
+  .project-preview
+    = link_to bu_reel_path do
+      = image_tag "reel2reel.jpg", width: "100%"
 
-  .project-preview.bg-color-white.right
-    .project-preview-content
-      = link_to illustrations_path do
-        .grid-container
-          .grid-half.text
-            .project-preview-text
-              %h2 Illustrations
-              %br/
-              %p I love doing flat illustrations, especially when they are things from movies that inspired me.  
-          .grid-half.image
-            = image_tag "battle-rifle.png", width: "100%"
+  .project-preview
+    = link_to illustrations_path do
+      = image_tag "battle-rifle.png", width: "100%"
 
-  .project-preview.bg-color-grey.left
-    .project-preview-content
-      = link_to tap_of_war_path do
-        .grid-container
-          .grid-half.image
-            = image_tag "tow.png", width: "100%"
-          .grid-half.text
-            .project-preview-text
-              %h2 Tap of War
-              %br/
-              %p This is an App currently out on the iOS Store that I made with two friends.
+  .project-preview
+    = link_to tap_of_war_path do
+      = image_tag "tow.png", width: "100%"
 
-  .project-preview.bg-color-white.right
-    .project-preview-content
-      = link_to vinyl_music_path do
-        .grid-container
-          .grid-half.text
-            .project-preview-text
-              %h2 Vinyl Music
-              %br/
-              %p While working for Brooklyn United, I was tasked with designing a skin for a music app that would play a vinyl record when playing your library of music. 
-          .grid-half.image
-            = image_tag "iphone-vinylapp.png", width: "100%"
+  .project-preview
+    = link_to vinyl_music_path do
+      = image_tag "iphone-vinylapp.png", width: "100%"
 
-  .project-preview.bg-color-orange.left
-    .project-preview-content
-      = link_to dsb_path do
-        .grid-container
-          .grid-half.image
-            = image_tag "dsb.png", width: "100%"
-          .grid-half.text
-            .project-preview-text
-              %h2 Designer Sketchbooks
-              %br/
-              %p I started a company making specalized sketchbooks for designers. It has grown from just me to a company of four, doing signage, stationery, business planning, logos, User Experiences with customers, branding, and everything else involved in making a business.
+  .project-preview
+    = link_to dsb_path do
+      = image_tag "dsb.png", width: "100%"

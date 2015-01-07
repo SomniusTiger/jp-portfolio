@@ -1,24 +1,23 @@
 // Styles for the header that only displays when viewing projects
 
 .project-header
-  +box-shadow(0, 1px, 4px, $color-shadow)
-  +transition(left, 200ms, $ease-out-quint)
-  left: 0
-  padding-left: 15.3rem
+  +anti-alias()
   position: absolute
-  top: 2rem
-  right: 0
-  z-index: 10
+  margin-left: 6rem
+  top: 3.3rem
 
-  ul
-    +anti-alias()
-    background-color: $color-black
-    color: $color-white
+.project-header-title, .project-header-separator, .project-header-subtitle
+  display: inline-block
+  font-size: 17px
 
-    li
-      display: inline-block
-      font-size: 1em
-      padding: 1.3rem 1.8rem
+.project-header-title
+  font-weight: 200
+  margin-right: 1rem
 
-      a
-        line-height: 1.4em
+.project-header-separator
+  font-weight: bold
+  margin-right: 1rem
+
+.project-header-subtitle
+  font-weight: bold
+  margin-right: 1rem

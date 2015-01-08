@@ -16,4 +16,6 @@
 //= require state/wow.min
 //= require state/homepage-scroll-animation
 //= require state/dropdown
+//= require layout/jquery.fitvids.js
+//= require layout/fitvids-init.js
 //= require layout/intro-card

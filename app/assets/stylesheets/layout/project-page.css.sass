@@ -3,8 +3,21 @@
 .project
   padding-bottom: 5rem
 
-.project-main-image
+.project-main-image-container
+  background-color: $color-black
   overflow-y: hidden
+  width: 100%
+
+  .project-main-image
+    background-position: center top
+    background-repeat: no-repeat
+    background-size: cover
+    display: block
+    height: 100%
+    opacity: 0.8
+    position: relative
+    width: 100%
+    z-index: 1
 
 .project-intro
   margin-top: 4rem

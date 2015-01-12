@@ -4,8 +4,8 @@
   .project-header-subtitle The Reel to Reel
 
 .project
-  .project-main-image
-    = image_tag "reel2reel/aas_reel.png", width: "100%", alt: ""
+  .project-main-image-container
+    .project-main-image{style: "background-image: url('" + image_url("reel2reel/aas_reel.png") + "')"}
 
   .project-content
     .project-intro

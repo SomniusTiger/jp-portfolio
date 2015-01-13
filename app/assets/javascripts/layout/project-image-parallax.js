@@ -20,7 +20,7 @@ var parallaxScroll = new function() {
     // Set background position to a third of the window's scroll position
     // Scroll rate is also based on window height
     $('.project-main-image').css({
-      'background-position': "50% " + ( scrollTop / 3 ) + "px"
+      'background-position': "50% " + Math.round( ( -scrollTop / 3 ) * 10 ) / 10 + "px"
     });
   };
 };
@@ -33,6 +33,6 @@ $(window).resize(function() {
   parallaxScroll.imgSize();
 });
 
-$(window).scroll(function() {
+$(window).on('scroll', function() {
   parallaxScroll.Scroll();
 });

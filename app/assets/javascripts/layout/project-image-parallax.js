@@ -17,10 +17,10 @@ var parallaxScroll = new function() {
     // Get window scroll position
     var scrollTop = $(window).scrollTop();
 
-    // Set margin-top to a third of the window's scroll position
+    // Set background position to a third of the window's scroll position
     // Scroll rate is also based on window height
     $('.project-main-image').css({
-      'margin-top': ( scrollTop / 4 )
+      'background-position': "50% " + ( scrollTop / 3 ) + "px"
     });
   };
 };

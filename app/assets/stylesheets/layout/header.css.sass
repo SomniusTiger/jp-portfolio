@@ -4,7 +4,7 @@ header
   +backface-visibility(hidden)
   +box-shadow(0, 1px, 4px, $color-shadow)
   +transform-style(preserve-3d)
-  +transition(transform, 300ms, $ease-out-quint)
+  +transition(transform 300ms $ease-out-quint)
   +translate3d(0, 0, 0, 0)
   left: 0
   position: fixed
@@ -21,6 +21,8 @@ header
   font-size: 1.3em
   padding: 1.3rem
   position: relative
+  text-align: center
+  width: 1.3rem
 
   .fa.fa-times
     width: 18px

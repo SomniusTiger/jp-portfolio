@@ -1,28 +1,35 @@
 // Styles for project pages
 
 .project
+  height: 100%
   padding-bottom: 5rem
 
 .project-main-image-container
   background-color: $color-black
+  height: 100%
   overflow-y: hidden
   width: 100%
 
   .project-main-image
-    +backface-visibility(hidden)
     +translate3d(0, 0, 0, 0)
+    background-attachment: fixed
     background-position: center top
     background-repeat: no-repeat
-    background-size: cover
-    display: block
+    background-size: auto 100%
+    bottom: 0
     height: 100%
+    line-height: 0
     opacity: 1
+    overflow-y: hidden
     position: relative
     width: 100%
     z-index: 1
 
 .project-intro
+  +box-sizing(border-box)
   margin-top: 4rem
+  max-width: 100%
+  padding: 0 1.2rem
   text-align: center
 
 .project-intro-image
@@ -35,8 +42,8 @@
   font-weight: 500
   line-height: 1.5em
   margin: 2rem auto 0
-  text-transform: uppercase
   max-width: 14rem
+  text-transform: uppercase
 
 .project-intro-work-types
   font-size: 1em
@@ -78,19 +85,23 @@
     width: 100%
 
 .project-section-title
+  +box-sizing(border-box)
   font-size: 1.6em
   font-weight: 500
   line-height: 1.4em
   margin: 3rem auto 0
   max-width: 60rem
+  padding: 0 1.2rem
   text-transform: uppercase
 
 .project-section-descript
+  +box-sizing(border-box)
   font-size: 1.4em
   font-weight: 200
   line-height: 1.4em
   margin: 3rem auto 0
   max-width: 60rem
+  padding: 0 1.2rem
 
 .project-section-video
   width: 100%
@@ -102,8 +113,10 @@
   text-align: center
 
 .project-footer-cta
+  +box-sizing(border-box)
   font-size: 1.8em
   margin-bottom: 1.5rem 
+  padding: 0 1.2rem
 
   a
     color: $color-blue
@@ -119,4 +132,5 @@
   
 .project-footer-other-project
   display: inline-block
+  max-width: 100%
   width: 20rem

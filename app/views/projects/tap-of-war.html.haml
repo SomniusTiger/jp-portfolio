@@ -1,4 +1,66 @@
-.project-header
+.project-header.text-color-white
   .project-header-title Work
   .project-header-separator="|"
   .project-header-subtitle Tap of War
+
+.project
+  .project-main-image-container
+    .project-main-image{style: "background-image: url('" + image_url("tapofwarvin.jpg") + "')"}
+  .project-down-arrows
+    = image_tag "double_carat-down-white.svg", width: "100%"
+
+  .project-content
+    .project-intro
+      = image_tag "tapofwar/tapofwar-logo.png", class: "project-intro-image", alt: ""
+      %h1.project-intro-title Tap of War
+      .project-intro-work-types
+        .project-intro-work-type UI
+        .project-intro-work-type-separator &bull;
+        .project-intro-work-type UX 
+      .project-intro-descript
+        With my friends, Changbi Li and Danny Nguyen, we coded and designed our very own iOS game called Tap of War. It’s a full game where two players tap as fast as they can on their color, moving the color across the screen to win. We plan for a late Febuary, early March release on the App Store.
+
+    .project-section-image
+      = image_tag "tapofwar/iphones.jpg", width: "100%", alt: ""
+
+    %section.project-section
+      .project-section-smalltitle
+        Icon Possibilities
+      .project-section-image
+        = image_tag "tapofwar/icons.jpg", width: "100%", alt: ""
+
+    %section.project-section
+      .project-section-title 
+        The Onboarding
+      .project-section-descript
+        For the onboarding, I wanted the player to have an intuitive learning experience. I see many games and apps that put a text wall between the game and the player. I designed a clean “intro sequence” that explained the game, without the text wall.
+
+    %section.project-section
+      .project-section-small-grid
+        .project-section-half
+          .project-section-image
+            = image_tag "tapofwar/screen.png", width: "100%", alt: ""
+        .project-section-half
+          .project-section-descript
+            The first screen the player sees is a welcome message with a little prompt of how to start. Once the player starts hitting the blue side, it moves to the next screen.
+          .project-section-descript
+            The second screen shows the player which side of the screen is theirs.
+          .project-section-descript
+            The third screen reminds the player about using multiple fingers to tap as fast as they can. 
+
+    .project-footer
+      .project-footer-smalltext
+        We are still working on the game, so many things might change from now 'til the release. 
+      .project-footer-text
+        Like my work? <a href="mailto:jpfairchild73@gmail.com">Email me</a>
+      .project-footer-more
+        Or check out more
+      .project-footer-other-projects
+        = link_to :bu_reel do
+          = image_tag "reel2reel.jpg", class: "project-footer-other-project"
+        = link_to :illustrations do
+          = image_tag "brifle.jpg", class: "project-footer-other-project"
+        = link_to :vinyl_music do
+          = image_tag "brifle.jpg", class: "project-footer-other-project"
+        = link_to :dsb do
+          = image_tag "brifle.jpg", class: "project-footer-other-project"

@@ -11,7 +11,8 @@
   width: 100%
 
   .project-main-image
-    +translate3d(0, 0, 0, 0)
+    +opacity(0.7)
+    +translateZ(0)
     background-attachment: fixed
     background-position: center top
     background-repeat: no-repeat
@@ -19,11 +20,20 @@
     bottom: 0
     height: 100%
     line-height: 0
-    opacity: 1
     overflow-y: hidden
     position: relative
     width: 100%
     z-index: 1
+
+.project-down-arrows
+  bottom: 0
+  cursor: pointer
+  left: 50%
+  margin-left: -4rem
+  padding: 1rem
+  position: absolute
+  width: 6rem
+  z-index: 20
 
 .project-intro
   +box-sizing(border-box)
@@ -75,9 +85,10 @@
 
   img
     display: block
+    width: 100%
 
-.project-section-gif
-  margin: 6rem auto 0
+.project-section-small-image
+  margin: 3rem auto
   max-width: 60rem
   width: 100%
 
@@ -94,6 +105,14 @@
   padding: 0 1.2rem
   text-transform: uppercase
 
+.project-section-smalltitle
+  font-size: 1.6em
+  font-weight: 200
+  line-height: 1.4em
+  margin: 0 auto
+  max-width: 60rem
+  width: 100%
+
 .project-section-descript
   +box-sizing(border-box)
   font-size: 1.4em
@@ -101,7 +120,27 @@
   line-height: 1.4em
   margin: 3rem auto 0
   max-width: 60rem
+  padding: 0 1.2rem 2rem
+
+.project-section-small-grid
+  +box-sizing(border-box)
+  display: table
+  margin: 0 auto
+  max-width: 60rem
   padding: 0 1.2rem
+  width: 100%
+
+  .project-section-half
+    display: table-cell
+    padding: 0 1rem
+    margin-bottom: 2rem
+    width: 50%
+    vertical-align: middle
+
+    .project-section-descript
+      margin-top: 0
+      text-align: left
+
 
 .project-section-video
   width: 100%
@@ -112,15 +151,22 @@
   margin-top: 6rem
   text-align: center
 
-.project-footer-cta
+.project-footer-text
   +box-sizing(border-box)
   font-size: 1.8em
-  margin-bottom: 1.5rem 
+  line-height: 1.2em
+  margin: 0 auto 1.5rem 
   padding: 0 1.2rem
 
   a
     color: $color-blue
     font-weight: 500
+
+.project-footer-smalltext
+  @extend .project-footer-text
+  margin-bottom: 2rem
+  max-width: 40rem
+  width: 100%
 
 .project-footer-more
   font-size: 1.6em

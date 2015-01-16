@@ -12,7 +12,7 @@ $(function() {
   var wow = new WOW();
   wow.init();
 
-  $('.intro-card-down-arrows').click(function(){
+  $('.intro-card-down-arrows, .project-down-arrows').click(function(){
     scrollOnClick();
   });
 

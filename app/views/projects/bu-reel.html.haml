@@ -6,6 +6,8 @@
 .project
   .project-main-image-container
     .project-main-image{style: "background-image: url('" + image_url("reel2reel/aas_reel.jpg") + "')"}
+  .project-down-arrows
+    = image_tag "double_carat-down-white.svg", width: "100%"
 
   .project-content
     .project-intro
@@ -41,13 +43,13 @@
         One of my favorite things I tried during the reel was a seamless 3D to 2D transition. I wanted the shot to appear like the iPhone had been dropped on the table. I animated an iPhone in Cinema 4D, and then made the iPhone texture overlay the 3D version via After Effects.
 
     .project-section-image
-      = image_tag "reel2reel/iphonedrop.png", width: "100%", alt: ""
+      = image_tag "reel2reel/iphonedrop.jpg", width: "100%", alt: ""
 
-    .project-section-gif
+    .project-section-small-image
       = image_tag "reel2reel/iphonedrop-gif.gif", width: "100%", alt: ""
 
     .project-footer
-      .project-footer-cta
+      .project-footer-text
         Like my work? <a href="mailto:jpfairchild73@gmail.com">Email me</a>
       .project-footer-more
         Or check out more

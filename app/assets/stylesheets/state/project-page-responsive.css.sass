@@ -1,9 +1,18 @@
 // Responsive styles for each project page class
 
++breakpoint($breakpoint-md)
+  .project-section-small-grid
+    display: block
+    width: 100%
+
+    .project-section-half
+      display: block
+      padding: 0
+      width: 100%
+
 +breakpoint($breakpoint-sm) 
-  
   .project-header
-    margin-left: 5rem
+    margin-left: 5.5rem
 
   .project-main-image-container
     .project-main-image
@@ -23,7 +32,7 @@
   .project-footer
     margin-bottom: 0
 
-  .project-footer-cta
+  .project-footer-text
     font-size: 1.4em
 
   .project-footer-more

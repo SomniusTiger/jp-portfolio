@@ -18,8 +18,7 @@ var parallaxScroll = new function() {
     // Don't scroll if less than a certain height, or not in landscape
     if (pageWidth > 768 && pageWidth > pageHeight) {
       $('.project-main-image').css({
-        'background-position': '50% ' + Math.round( ( -scrollTop / 3 ) * 10 ) / 10 + 'px',
-        'transform': 'translate3d(0, 0, 0)'
+        'background-position': '50% ' + Math.round( ( -scrollTop / 3 ) * 10 ) / 10 + 'px'
       });
     }
   };

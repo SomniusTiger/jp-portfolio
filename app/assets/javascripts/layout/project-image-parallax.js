@@ -1,12 +1,13 @@
 // Logic for getting project images to parallax scroll
 
 var parallaxScroll = new function() {
-  var self =    this,
-  pageHeight =  $(window).height(),
-  pageWidth =   $(window).width();
+  var self = this;
 
   this.imgSize = function() {
     // Resize container element to always be the height of the page
+    var pageHeight =  $(window).height();
+    var pageWidth =   $(window).width();
+
     $('.project-main-image-container').height(pageHeight);
   };
 
@@ -17,10 +18,10 @@ var parallaxScroll = new function() {
     // Get window scroll position
     var scrollTop = $(window).scrollTop();
 
-    // Set background position to a third of the window's scroll position
+    // Set Y of translate3d to a third of the window's scroll position
     // Scroll rate is also based on window height
     $('.project-main-image').css({
-      'background-position': "50% " + Math.round( ( -scrollTop / 3 ) * 10 ) / 10 + "px"
+      'transform': 'translate3d(0, ' + Math.round( ( scrollTop / 3 ) * 10 ) / 10 + 'px, 0)'
     });
   };
 };

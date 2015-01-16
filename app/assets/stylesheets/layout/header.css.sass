@@ -1,9 +1,11 @@
 // All styles having to do with the omnipresent header
 
 header
-  +translate3d(0, 0, 0, 0)
-  +transition(transform, 300ms, $ease-out-quint)
+  +backface-visibility(hidden)
   +box-shadow(0, 1px, 4px, $color-shadow)
+  +transform-style(preserve-3d)
+  +transition(transform, 300ms, $ease-out-quint)
+  +translate3d(0, 0, 0, 0)
   left: 0
   position: fixed
   top: 2rem

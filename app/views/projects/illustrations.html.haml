@@ -1,4 +1,76 @@
-.project-header
+.project-header.no-text-shadow
   .project-header-title Work
   .project-header-separator="|"
   .project-header-subtitle Illustrations
+
+.project
+  .project-main-image-container
+    .project-main-image.illustration.contain{style: "background-image: url('" + image_url("brifle.png") + "')"}
+  .project-down-arrows
+    = image_tag "carat-down-black.svg", width: "100%"
+
+  .project-content
+    .project-intro
+      %h1.project-intro-title Illustration
+      .project-intro-work-types
+        .project-intro-work-type Vector
+        .project-intro-work-type-separator &bull;
+        .project-intro-work-type Visuals
+
+    %section.project-section
+      .project-section-small-image
+        = image_tag "illustrations/darksouls.png", width: "100%", alt: ""
+      .project-section-title 
+        Dark Souls 2
+      .project-section-descript
+        These are two swords my friend <a target="_blank" href="//etohehir.com/">Tom</a> and I made, both from the game Dark Souls 2. While I never had the skill to finish the game, I appreciate both its difficulty and its art style. 
+
+    %section.project-section
+      .project-section-small-image
+        = image_tag "illustrations/battle-rifle.png", width: "100%", alt: ""
+      .project-section-title 
+        Halo 2 Battle Rifle
+      .project-section-descript
+        This is a battle rifle from the Halo series of games that I remade in a flat style. My friend <a target="_blank" href="//rkiley.com/">Ryan</a> and I plan to make a set of these that are all different guns from Halo. 
+
+    %section.project-section
+      .project-section-small-image
+        = image_tag "illustrations/catchingfire.png", width: "100%", alt: ""
+      .project-section-title 
+        The Hunger Games
+      .project-section-descript
+        I love the Mockingjay emblem, and those movies are some of my favorites. After I saw the second movie, I was inspired to create my own flat Mockingjay.
+
+    %section.project-section
+      .project-section-small-image
+        = image_tag "illustrations/jp.png", width: "100%", alt: ""
+      .project-section-title 
+        Monogram
+      .project-section-descript
+        A monogram of my initials that I designed for myself. I love sharp-angled iconography because of the solid, powerful impression it makes.
+
+    %section.project-section
+      .project-section-small-image
+        = image_tag "illustrations/killorder.gif", width: "100%", alt: ""
+      .project-section-title 
+        Ender's Game
+      .project-section-descript
+        After I saw Ender’s Game I wanted to try my hand at future style interfaces. I love Ash Thorp and Gmunk &ndash; they were big inspirations for this animation.
+
+    
+
+    .project-footer
+      .project-footer-text
+        Like my work? <a href="mailto:jpfairchild73@gmail.com">Email me</a>
+      .project-footer-more
+        Or check out more
+      .project-footer-other-projects
+        = link_to :bu_reel do
+          = image_tag "reel2reel.jpg", class: "project-footer-other-project"
+        = link_to :tap_of_war do
+          = image_tag "tapofwarvin.jpg", class: "project-footer-other-project"
+        = link_to :vinyl_music do
+          = image_tag "brifle.png", class: "project-footer-other-project"
+        = link_to :dsb do
+          = image_tag "brifle.png", class: "project-footer-other-project"
+

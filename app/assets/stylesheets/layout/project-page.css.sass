@@ -14,7 +14,7 @@
     +opacity(1)
     +translateZ(0)
     background-attachment: fixed
-    background-position: center top
+    background-position: center center
     background-repeat: no-repeat
     background-size: cover
     bottom: 0
@@ -24,6 +24,12 @@
     position: relative
     width: 100%
     z-index: 1
+
+    &.contain
+      background-size: contain
+
+    &.illustration
+      background-color: $color-grey
 
 .project-down-arrows
   bottom: 0
@@ -79,6 +85,10 @@
 .project-section
   margin: 6rem 0
   text-align: center
+
+  a
+    +transition(opacity 300ms $ease-out-quint)
+    font-weight: 500
 
 .project-section-image
   width: 100%

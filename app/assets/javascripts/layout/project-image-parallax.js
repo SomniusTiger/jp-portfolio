@@ -17,9 +17,16 @@ var parallaxScroll = new function() {
     // Move by third of the window's scroll position
     // Don't scroll if less than a certain height, or not in landscape
     if (pageWidth > 768 && pageWidth > pageHeight) {
-      $('.project-main-image').css({
-        'background-position': '50% ' + Math.round( ( -scrollTop / 3 ) * 10 ) / 10 + 'px'
-      });
+      if ( !$('.project-main-image').hasClass('contain') ) {
+        $('.project-main-image').css({
+          'background-position': '50% ' + Math.round( ( -scrollTop / 3 ) * 10 ) / 10 + 'px'
+        });
+      } 
+      if ($('.project-main-image').hasClass('contain')) {
+        $('.project-main-image').css({
+          'background-position': '50% ' + (50 + Math.round( ( -scrollTop / 20 ) * 10 ) / 10 + '%')
+        });
+      }
     }
   };
 };

@@ -4,9 +4,8 @@
   +anti-alias()
   +backface-visibility(hidden)
   +box-sizing(border-box)
-  +transform-style(preserve-3d)
-  +translate3d(0, 0, 0, 0)
   +transition(transform 300ms $ease-out-quint)
+  +translateX(0)
   background-color: $color-blue
   border-right: solid 1px darken($color-blue, 15%)
   color: $color-white
@@ -27,7 +26,7 @@ ul.header-main-dropdown
       width: 100%
 
     a
-      +transition(background-color, 300ms, $ease-out-quint)
+      +transition(background-color 300ms $ease-out-quint)
 
       &:hover
         +opacity(1)

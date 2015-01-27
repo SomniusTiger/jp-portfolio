@@ -1,14 +1,49 @@
-.project-header
+.project-header.text-color-white
   .project-header-title Work
   .project-header-separator="|"
   .project-header-subtitle Vinyl Music
 
 .project
+  .project-main-image-container
+    .project-main-image{style: "background-image: url('" + image_url("vinylapp.jpg") + "')"}
+  .project-down-arrows
+    = image_tag "carat-down-white.svg", width: "100%"
+
   .project-content
+    .project-intro
+      %h1.project-intro-title Vinyl Music
+      .project-intro-work-types
+        .project-intro-work-type UI
+        .project-intro-work-type-separator &bull;
+        .project-intro-work-type UX 
+
+    .project-section-image
+      = image_tag "vinyl/iphones.jpg", width: "100%", alt: ""
+
+    %section.project-section
+      .project-section-title 
+        The Idea
+      .project-section-descript
+        I have always wanted to make a music app, I redid the spotify app some years ago and I keep my eyes on all music apps coming out on IOS. The huge difference with this app is rewinding and fowerding a song by spinging the vinyl.
+
+    %section.project-section
+      .project-section-smalltitle
+        Icon Possibilities
+      .project-section-image
+        = image_tag "vinyl/icons.png", width: "100%", alt: ""
+
+    %section.project-section
+      .project-section-small-grid
+        .project-section-half
+          .project-section-image
+            = image_tag "vinyl/vinylmusic.gif", width: "100%", alt: ""
+        .project-section-half
+          .project-section-descript
+            Spinning an album forward or backwards to rewind and fast forward is what seperates this app from any other music app out there
+          .project-section-descript
+            Being able to replace the scrobble bar frees up a ton of space on the screen, some apps like spotify don’t even but the volume bar in the song screen because their isn’t enough space. 
 
     .project-footer
-      .project-footer-smalltext
-        We are still working on the game, so many things might change from now 'til the release. 
       .project-footer-text
         Like my work? <a href="mailto:jpfairchild73@gmail.com">Email me</a>
       .project-footer-more

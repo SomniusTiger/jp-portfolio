@@ -5,19 +5,22 @@
   width: 100%
 
 .project-preview
-  height: 0
-  overflow-y: hidden
-  padding-bottom: 43.75%
+  display: block
   width: 100%
 
   a
+    display: block
+    height: 0
+    overflow-y: hidden
+    margin-bottom: -1px
+    padding-bottom: 43.75%
+
     img
       display: block
+      width: 100%
 
       &.dsb
         margin-top: -10%
-      &.vinyl
-        margin-top: -9%
 
   a:hover
     opacity: 1

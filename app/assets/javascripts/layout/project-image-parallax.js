@@ -24,7 +24,7 @@ var parallaxScroll = new function() {
       } 
       if ($('.project-main-image').hasClass('contain')) {
         $('.project-main-image').css({
-          'background-position': '50% ' + (50 + Math.round( ( -scrollTop / 20 ) * 10 ) / 10 + '%')
+          'background-position': '50% ' + (50 + Math.round( ( -scrollTop / 30 ) * 100 ) / 100 + '%')
         });
       }
     }

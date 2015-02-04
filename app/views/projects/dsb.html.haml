@@ -1,9 +1,22 @@
-.project-header
+.project-header.text-color-white
   .project-header-title Work
   .project-header-separator="|"
   .project-header-subtitle Designer Sketchbooks
 
 .project
+  .project-main-image-container
+    .project-main-image{style: "background-image: url('" + image_url("dsb.jpg") + "')"}
+  .project-down-arrows
+    = image_tag "carat-down-white.svg", width: "100%"
+
+  .project-content
+    .project-intro
+      %h1.project-intro-title Designer Sketchbooks
+      .project-intro-work-types
+        .project-intro-work-type UI
+        .project-intro-work-type-separator &bull;
+        .project-intro-work-type UX
+
   .project-content
 
     .project-footer

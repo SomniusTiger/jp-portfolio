@@ -28,8 +28,6 @@ gem 'capistrano-rails', group: :development
 
 # Use HAML to make coding in HTML easier
 gem 'haml'
-# Use proper SASS
-gem 'sass'
 # Lovely font icon set
 gem 'font-awesome-rails'
 # Inline code debugging

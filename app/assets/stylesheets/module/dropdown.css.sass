@@ -6,8 +6,8 @@
   +box-sizing(border-box)
   +transition(transform 300ms $ease-out-quint)
   +translateX(0)
-  background-color: $color-blue
-  border-right: solid 1px darken($color-blue, 15%)
+  background-color: $color-grey-dk
+  // border-right: solid 1px lighten($color-grey-dk, 15%)
   color: $color-white
   height: 100%
   left: -20rem
@@ -31,7 +31,7 @@ ul.header-main-dropdown
 
     a
       +transition(background-color 300ms $ease-out-quint)
-      border-top: 1px solid darken($color-blue, 15%)
+      border-top: 1px solid lighten($color-grey-dk, 15%)
 
       &.small 
         padding:
@@ -39,11 +39,11 @@ ul.header-main-dropdown
           top: 1em
 
       &.last
-        border-bottom: 1px solid darken($color-blue, 15%)
+        border-bottom: 1px solid lighten($color-grey-dk, 15%)
 
       &:hover
         +opacity(1)
-        background-color: darken($color-blue, 15%)
+        background-color: lighten($color-grey-dk, 15%)
 
     .dropdown-title
       font-weight: bold

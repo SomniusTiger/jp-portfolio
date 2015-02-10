@@ -34,7 +34,9 @@
       .project-section-small-grid
         .project-section-half
           .project-section-image
-            = image_tag "vinyl/vinylmusic.gif", width: "100%", alt: ""
+            %video{:autoplay=>"true", :controls=>"true", :loop=>"true", :poster=>"#{image_url 'vinyl/vinyl-poster-img.jpg'}"}
+              %source{:src=>"#{image_url 'vinyl/vinylmusic.mp4'}"}
+              Looks like your browser doesn't support HTML5 video! Go download an up-to-date browser.
         .project-section-half
           .project-section-descript
             Spinning an album to rewind and fast forward is what separates this app from any other music app. This unique feature both saves space and is easier to use.
@@ -42,10 +44,10 @@
             Being able to spin the album instead of using a finnicky slider gives this app a ton more visual breathing room than other music apps. For example, Spotify doesn’t even put the volume bar in the song screen because there isn’t enough space. 
 
     .project-footer
-      .project-footer-text
-        Like my work? <a href="mailto:jpfairchild73@gmail.com">Email me</a>
       .project-footer-more
-        Or check out more
+        Thanks for checking out this project!
+      .project-footer-text
+        <a href="mailto:jpfairchild73@gmail.com">Email me</a> if you want to get in touch!
       .project-footer-other-projects
         .project-footer-other-project
           = link_to :bu_reel do

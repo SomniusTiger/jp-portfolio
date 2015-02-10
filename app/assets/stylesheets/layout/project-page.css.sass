@@ -62,6 +62,7 @@
 
 .project-intro-work-types
   font-size: 1em
+  margin-bottom: 2rem
   margin-top: 1.5rem
   opacity: 0.6
   text-transform: uppercase
@@ -78,7 +79,7 @@
   font-size: 1.2em
   font-weight: 200
   line-height: 1.4em
-  margin: 2rem auto 6rem
+  margin: 0 auto 6rem
   max-width: 50rem
   text-align: left
 
@@ -162,6 +163,9 @@
     &.vertical-align-top 
       vertical-align: top
 
+    video
+      width: 100%
+
     .project-section-descript
       margin-top: 0
       text-align: left
@@ -182,14 +186,15 @@
 
 .project-footer-text
   +box-sizing(border-box)
-  font-size: 1.8em
+  font-size: 1.6em
+  font-style: italic
   line-height: 1.2em
   margin: 0 auto 1.5rem 
   padding: 0 1.2rem
 
   a
     color: $color-blue
-    font-weight: 500
+    font-weight: bold
 
 .project-footer-smalltext
   @extend .project-footer-text
@@ -198,7 +203,10 @@
   width: 100%
 
 .project-footer-more
-  font-size: 1.6em
+  color: $color-grey-lt
+  font-size: 1.55em
+  font-weight: 200
+  margin-bottom: 0.5rem
 
 .project-footer-other-projects
   margin-top: 6rem

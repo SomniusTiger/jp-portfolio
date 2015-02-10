@@ -1,39 +1,35 @@
 .dropdown-menu
   %ul.header-main-dropdown
-    %li
-      .dropdown-title
-        Menu
-    %li
+    %li.main-title
       = link_to root_path do
         Home
     %li
       = link_to about_path do
         About/Contact
     %li
-      = link_to "/assets/jpfairchildresume.pdf" do
+      = link_to "/assets/jpfairchildresume.pdf", class: "last" do
         Résumé
-    %li
+    %li.main-title
       .dropdown-title
-        Work
+        Projects
     %li
-      = link_to bu_reel_path do
+      = link_to bu_reel_path, class: "small" do
         The Reel to Reel
     %li
-      = link_to illustrations_path do
+      = link_to illustrations_path, class: "small" do
         Illustrations
     %li
-      = link_to tap_of_war_path do
+      = link_to tap_of_war_path, class: "small" do
         Tap of War
     %li
-      = link_to vinyl_music_path do
+      = link_to vinyl_music_path, class: "small" do
         Vinyl Music
     %li
-      = link_to dsb_path do
+      = link_to dsb_path, class: "small last" do
         Designer Sketchbooks
 
     %li
       .dropdown-title
-        Social
 
       %ul.header-social-dropdown
         %li

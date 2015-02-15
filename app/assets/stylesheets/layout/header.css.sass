@@ -34,19 +34,20 @@ header
   display: block
   font-size: 1.3em
   left: 3.9rem
-  padding: 0.6rem 2rem
+  padding: 1.3rem 2rem
   position: fixed
   top: 2rem
+  z-index: 30
 
   .title
+    display: inline-block
     font-family: "Lato", "Helvetica Neue", Arial, sans-serif
-    margin-bottom: 0.59rem
+    margin-right: 1rem
 
   .subtitle
+    +anti-alias()
     color: lighten($color-grey-lt, 20%)
-    font-size: 0.64em
+    display: inline-block
+    font-style: italic
+    font-weight: 200
     text-transform: uppercase
-
-    span
-      color: $color-grey
-      font-weight: 200

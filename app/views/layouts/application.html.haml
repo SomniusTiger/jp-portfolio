@@ -22,10 +22,10 @@
       ga('create', 'UA-48533340-1', 'jpfairchild.com');
       ga('send', 'pageview');
 
-    = stylesheet_link_tag    'application', media: 'all'
-    = javascript_include_tag 'application'
+    = stylesheet_link_tag 'application', media: 'all'
     = csrf_meta_tags
 
   %body
     = render "shared/header"
     = yield
+    = javascript_include_tag 'application'

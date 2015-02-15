@@ -26,9 +26,6 @@
       margin-top: 2rem
       opacity: 1
 
-  .header-title
-    display: none
-
   .dropdown-menu
     left: -16rem
     width: 16rem
@@ -43,3 +40,24 @@
     li
       a
         padding: 0.5rem 0.29rem
+
+  .header-title
+    +box-sizing(border-box)
+    position: static
+    padding: 2.5rem 2rem
+    text-align: center
+    width: 100%
+
+    &.open
+      +translateX(0)
+
+    .title 
+      font-size: 1.5em
+      margin-bottom: 0.2rem
+      margin-right: 0
+
+    .subtitle
+      font-size: 1em
+
+    .title, .subtitle
+      display: block

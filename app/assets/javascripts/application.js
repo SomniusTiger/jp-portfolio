@@ -15,9 +15,4 @@
 //= require jquery-ui/effect
 //= require _lib/wow.min
 //= require _lib/jquery.fitvids.js
-//= require state/homepage-scroll-animation
-//= require state/dropdown
-//= require layout/fitvids-init.js
-//= require layout/intro-card
-//= require layout/project-image-parallax.js
 //= require main.js

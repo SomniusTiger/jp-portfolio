@@ -26,21 +26,18 @@
       margin-top: 2rem
       opacity: 1
 
-  h1.header-title
+  .header-title
     display: none
 
   .dropdown-menu
-    +transition(left 300ms $ease-out-quint)
-    left: -80%
-    width: 80%
+    left: -16rem
+    width: 16rem
 
     &.open
-      +translateX(0)
-      left: 0
+      +translateX(16rem)
 
   header.open
-    +translateX(0)
-    left: 80%
+    +translateX(16rem)
 
   ul.header-social-dropdown
     li

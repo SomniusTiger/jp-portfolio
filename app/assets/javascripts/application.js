@@ -20,3 +20,4 @@
 //= require layout/fitvids-init.js
 //= require layout/intro-card
 //= require layout/project-image-parallax.js
+//= require main.js

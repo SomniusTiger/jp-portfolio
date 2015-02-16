@@ -6,6 +6,7 @@ var jpfairchild = new function() {
     self.scrollOnClick();
     self.setSlideHeight();
     self.fitvidsInit();
+    self.wowInit();
   };
 
   this.preventMainScrolling = function() {
@@ -80,8 +81,12 @@ var jpfairchild = new function() {
     });
   };
 
-  this.fitvidsInit = function () {
+  this.fitvidsInit = function() {
     $(".project-section-video").fitVids();
+  };
+
+  this.wowInit = function() {
+    new WOW().init();
   };
 
 };

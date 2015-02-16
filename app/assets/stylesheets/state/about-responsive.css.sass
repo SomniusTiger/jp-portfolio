@@ -1,0 +1,51 @@
+// Responsive styles for the about page
+
++breakpoint($breakpoint-lg)
+  .intro-card
+    height: auto
+    overflow-y: visible
+
+    .content
+      .grid-container
+        .grid-half
+          padding: 0
+
+    .computer
+      margin-top: 0
+      left: -20%
+      width: 75%
+
++breakpoint($breakpoint-md)
+  #about
+    .about-image-container
+      padding:
+        left: 0
+        right: 0
+      .about-image
+        max-width: 100%
+    .about-descript
+      max-width: 100%
+      padding:
+        bottom: 2rem
+        left: 0
+        right: 0
+
+      ul.about-socials
+        text-align: center
+
+  .grid-container
+    display: block
+
+    .grid-half
+      display: block
+      width: 100%
+
++breakpoint($breakpoint-sm)
+  #about
+    .about-descript
+      font-size: 75%
+
+      .text
+        font-size: 16px
+
+

@@ -10,15 +10,15 @@ var jpfairchild = new function() {
 
   this.preventMainScrolling = function() {
     $('html, body').css({
-      'overflow-x': 'hidden',
-      'overflow-y': 'hidden'
+      'height': 'auto',
+      'overflow': 'hidden'
     });
   };
 
   this.resumeMainScrolling = function() {
     $('html, body').css({
-      'overflow-x': 'visible',
-      'overflow-y': 'visible'
+      'height': '100%',
+      'overflow': 'visible'
     });
   };
 
@@ -74,7 +74,7 @@ var jpfairchild = new function() {
   };
 
   this.setSlideHeight = function() {
-    $('.container').css({
+    $('.container, .project-main-image-container').css({
       'line-height' : $(window).height() + 'px',
       'height' : $(window).height() + 'px'
     });

@@ -75,10 +75,20 @@ var jpfairchild = new function() {
   };
 
   this.setSlideHeight = function() {
-    $('.container, .project-main-image-container').css({
-      'line-height' : $(window).height() + 'px',
-      'height' : $(window).height() + 'px'
-    });
+    var pageWidth =   window.innerWidth  || window.documentElement.clientWidth  || window.body.clientWidth;
+
+    if (pageWidth > 540) {
+      $('.container, .project-main-image-container').css({
+        'line-height' : $(window).height() + 'px',
+        'height' : $(window).height() + 'px'
+      });
+    }
+    else {
+      $('.container, .project-main-image-container').css({
+        'line-height' : 'normal',
+        'height' : 'auto'
+      });
+    }
   };
 
   this.fitvidsInit = function() {

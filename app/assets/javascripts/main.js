@@ -78,13 +78,13 @@ var jpfairchild = new function() {
     var pageWidth =   window.innerWidth  || window.documentElement.clientWidth  || window.body.clientWidth;
 
     if (pageWidth > 540) {
-      $('.container, .project-main-image-container').css({
+      $('.container, .project-main-image-container, .intro-card').css({
         'line-height' : $(window).height() + 'px',
         'height' : $(window).height() + 'px'
       });
     }
     else {
-      $('.container, .project-main-image-container').css({
+      $('.container, .project-main-image-container, .intro-card').css({
         'line-height' : 'normal',
         'height' : 'auto'
       });

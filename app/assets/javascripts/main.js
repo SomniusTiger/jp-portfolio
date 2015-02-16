@@ -84,9 +84,13 @@ var jpfairchild = new function() {
       });
     }
     else {
-      $('.container, .project-main-image-container, .intro-card').css({
+      $('.container, .intro-card').css({
         'line-height' : 'normal',
         'height' : 'auto'
+      });
+      $('.project-main-image-container').css({
+        'line-height' : $(window).height() + 'px',
+        'height' : $(window).height() + 'px'
       });
     }
   };

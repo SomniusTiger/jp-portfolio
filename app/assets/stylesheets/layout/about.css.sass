@@ -17,22 +17,57 @@
     .about-image
       +border-radius(0.5rem)
       display: inline-block
-      height: 16rem
       margin: 0 auto
+      max-width: 24rem
       overflow: hidden
       vertical-align: middle
-      width: 16rem
+      width: 100%
 
       img
         margin-top: -1rem
         display: block
 
   .about-descript
-    max-width: 28rem
+    max-width: 35rem
     height: 100%
 
     .title, .subtitle
       line-height: normal
 
+    .title
+      color: $color-blue
+      font-size: 3em
+      font-weight: 500
+
     .subtitle
-      margin-bottom: 1.5rem
+      font-size: 1.5em
+      font-style: italic
+      font-weight: bold
+      margin: 1rem 0 1.5rem
+      text-transform: uppercase
+
+    .text
+      margin-bottom: 1rem
+
+      span
+        color: $color-blue
+        font-weight: 500
+
+    ul.about-socials
+      line-height: normal
+      text-align: right
+      width: 100%
+
+      li
+        font-size: 2em
+        display: inline-block
+        line-height: normal
+        margin-left: 1rem
+        vertical-align: middle
+
+        a
+          +transition(opacity 300ms $ease-out-quint)
+
+  .project-down-arrows.about
+    position: static
+    margin: 0 auto

@@ -19,7 +19,7 @@
 ul.header-main-dropdown
   +box-sizing(border-box)
   height: 100%
-  min-height: 790px
+  min-height: 53rem
   padding-bottom: 4rem
   position: relative
 
@@ -69,11 +69,14 @@ ul.header-social-dropdown
     a
       +transition(opacity 300ms $ease-out-quint)
       border: none
-      padding: 0.5rem 0.6rem
+      padding: 0.5rem 0.5rem
       text-transform: none
 
       .fa
-        font-size: 2em
+        font-size: 1.8em
+
+        &.small
+          font-size: 1.4em
 
       &:hover
         +opacity(0.5)

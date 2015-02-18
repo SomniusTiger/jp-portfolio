@@ -11,7 +11,7 @@
               .snowboard.wow.fadeIn{:data => {'wow-delay' => "1.5s"}}
                 = image_tag "snowboard.svg"
             = image_tag "computer.svg", class: "computer-img"
-        .grid-half
+        .grid-half.introduction
           .intro-card-descript.wow.fadeIn{:data => {'wow-delay' => "2s"}}
             %h2.intro-card-small_title Hello!
             %p.intro-card-small_details I&rsquo;m JP
@@ -36,6 +36,9 @@
             %p.text
               I have a multi-disciplinary skillset including Visual Design, Motion Graphics, Illustration, Audio Mixing and 3D. If you want to check out what I'm listening to, or see what I'm currently inspired by, follow me!
             %ul.about-socials
+              %li
+                = link_to "mailto:jpfairchild73@gmail.com", target: "_blank" do
+                  = fa_icon "paper-plane", class: "small"
               %li
                 = link_to "https://twitter.com/jpfairchild", target: "_blank" do
                   = fa_icon "twitter"

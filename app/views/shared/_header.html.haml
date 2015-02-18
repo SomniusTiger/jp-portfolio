@@ -5,9 +5,12 @@
         Home
     %li
       = link_to about_path do
-        About/Contact
+        About
     %li
-      = link_to "/assets/jpfairchildresume.pdf", class: "last" do
+      = link_to "mailto:jpfairchild73@gmail.com" do
+        Contact
+    %li
+      = link_to "/assets/jpfairchildresume.pdf", class: "last", target: "_blank" do
         Résumé
     %li.main-title
       .dropdown-title
@@ -32,6 +35,9 @@
       .dropdown-title
 
       %ul.header-social-dropdown
+        %li
+          = link_to "mailto:jpfairchild73@gmail.com", target: "_blank" do
+            = fa_icon "paper-plane", class: "small"
         %li
           = link_to "https://twitter.com/jpfairchild", target: "_blank" do
             = fa_icon "twitter"

@@ -18,6 +18,12 @@
     padding-bottom: 43.75%
     width: 100%
 
+    &:hover
+      opacity: 1
+
+      img
+        opacity: 1
+
     .project-preview-label
       +box-sizing(border-box)
       +text-shadow(0 2px 2px $color-black)
@@ -31,7 +37,7 @@
       width: 100%
 
       &.black
-        +text-shadow(none)
+        +text-shadow(0 2px 2px $color-white)
         color: $color-black
 
       .project-preview-label-container
@@ -51,12 +57,11 @@
           text-transform: none
 
     img
+      +transition(opacity 300ms $ease-out-quint)
       display: block
+      opacity: 0.8
       width: 100%
 
       &.dsb
         margin-top: -10%
-
-  a:hover
-    opacity: 1
     

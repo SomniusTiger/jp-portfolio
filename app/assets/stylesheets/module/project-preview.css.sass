@@ -7,6 +7,7 @@
 
 .project-preview
   display: block
+  position: relative
   width: 100%
 
   a
@@ -15,6 +16,39 @@
     overflow-y: hidden
     margin-bottom: -1px
     padding-bottom: 43.75%
+    width: 100%
+
+    .project-preview-label
+      +box-sizing(border-box)
+      +text-shadow(0 2px 2px $color-black)
+      bottom: 0
+      color: $color-white
+      display: inline-block
+      left: 0
+      padding: 3rem
+      position: absolute
+      text-align: center
+      width: 100%
+
+      &.black
+        +text-shadow(none)
+        color: $color-black
+
+      .project-preview-label-container
+        display: inline-block
+        text-align: left
+
+        h1.project-preview-title
+          font-family: "Roboto", "Helvetica Neue", Arial, sans-serif
+          font-size: 2em
+          font-weight: 500
+          margin-bottom: 0.5rem
+          text-transform: uppercase
+
+        h2.project-preview-subtitle
+          font-size: 1.5em
+          font-weight: normal
+          text-transform: none
 
     img
       display: block

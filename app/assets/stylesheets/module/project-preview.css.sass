@@ -11,6 +11,7 @@
   width: 100%
 
   a
+    background-color: $color-black
     display: block
     height: 0
     overflow-y: hidden
@@ -26,7 +27,6 @@
 
     .project-preview-label
       +box-sizing(border-box)
-      +text-shadow(0 2px 2px $color-black)
       bottom: 0
       color: $color-white
       display: inline-block
@@ -37,7 +37,6 @@
       width: 100%
 
       &.black
-        +text-shadow(0 2px 2px $color-white)
         color: $color-black
 
       .project-preview-label-container

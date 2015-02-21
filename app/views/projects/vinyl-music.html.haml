@@ -34,8 +34,9 @@
       .project-section-small-grid
         .project-section-half
           .project-section-image
-            %video{:autoplay=>"true", :controls=>"true", :loop=>"true", :poster=>"#{image_url 'vinyl/vinyl-poster-img.jpg'}"}
-              %source{:src=>"#{image_url 'vinyl/vinylmusic.mp4'}", :type=>"video/mp4; codecs=avc1.42E01E,mp4a.40.2"}
+            %video{:autoplay=>true, :controls=>true, :loop=>true, :poster=>"#{image_url 'vinyl/vinyl-poster-img.jpg'}"}
+              %source{:src=>"#{image_url 'https://fat.gfycat.com/MealyBreakableAmericanpainthorse.mp4'}", :type=>"video/mp4"}
+              %source{:src=>"#{image_url 'https://fat.gfycat.com/MealyBreakableAmericanpainthorse.webm'}", :type=>"video/webm"}
               Looks like your browser doesn't support HTML5 video! Go download an up-to-date browser.
         .project-section-half
           .project-section-descript
@@ -50,15 +51,15 @@
         <a href="mailto:jpfairchild73@gmail.com">Email me</a> if you want to get in touch!
       .project-footer-other-projects
         .project-footer-other-project
-          = link_to :dsb do
-            = image_tag "dsb.jpg", class: "dsb"
-        .project-footer-other-project
           = link_to :bu_reel do
             = image_tag "reel2reel.jpg"
         .project-footer-other-project
-          = link_to :illustrations do
-            = image_tag "brifle.png"
-        .project-footer-other-project
           = link_to :tap_of_war do
             = image_tag "tapofwarvin.jpg"
+        .project-footer-other-project
+          = link_to :dsb do
+            = image_tag "dsb.jpg", class: "dsb"
+        .project-footer-other-project
+          = link_to :illustrations do
+            = image_tag "brifle.png"
         .clearfix

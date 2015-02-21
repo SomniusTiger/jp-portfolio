@@ -8,6 +8,26 @@
 
 .project-previews
   .project-preview
+    = link_to bu_reel_path do
+      = image_tag "reel2reel.jpg", width: "100%"
+      .project-preview-label
+        .project-preview-label-container
+          %h1.project-preview-title
+            Brooklyn United
+          %h2.project-preview-subtitle
+            MOTION / VISUAL
+
+  .project-preview
+    = link_to tap_of_war_path do
+      = image_tag "tapofwarvin.jpg", width: "100%"
+      .project-preview-label
+        .project-preview-label-container
+          %h1.project-preview-title
+            Tap of War
+          %h2.project-preview-subtitle
+            IOS / UI / UX
+
+  .project-preview
     = link_to dsb_path do
       = image_tag "dsb.jpg", width: "100%", class: "dsb"
       .project-preview-label
@@ -18,25 +38,15 @@
             UI / UX / CEO
 
   .project-preview
-    = link_to bu_reel_path do
-      = image_tag "reel2reel.jpg", width: "100%"
+    = link_to vinyl_music_path do
+      = image_tag "vinylcloseup.jpg", width: "100%"
       .project-preview-label
         .project-preview-label-container
           %h1.project-preview-title
-            Brooklyn United Showreel
+            Vinyl Music
           %h2.project-preview-subtitle
-            Motion / Visual
-
-  .project-preview
-    = link_to tap_of_war_path do
-      = image_tag "tapofwarvin.jpg", width: "100%"
-      .project-preview-label
-        .project-preview-label-container
-          %h1.project-preview-title
-            Tap of War
-          %h2.project-preview-subtitle
-            iOS / UI / UX
-
+            IOS / UI / UX
+  
   .project-preview
     = link_to illustrations_path do
       = image_tag "brifle.png", width: "100%"
@@ -45,14 +55,5 @@
           %h1.project-preview-title
             Illustrations
           %h2.project-preview-subtitle
-            Vector / Visual
-
-  .project-preview
-    = link_to vinyl_music_path do
-      = image_tag "vinylcloseup.jpg", width: "100%"
-      .project-preview-label
-        .project-preview-label-container
-          %h1.project-preview-title
-            Vinyl Music
-          %h2.project-preview-subtitle
-            iOS / UI / UX
+            VECTOR / VISUAL
+            

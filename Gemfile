@@ -36,6 +36,8 @@ gem 'pry', :group => :development
 gem 'jquery-ui-rails'
 # Awesome mixin library for SASS
 gem 'compass-rails'
+# Mime types
+gem 'mime-types'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

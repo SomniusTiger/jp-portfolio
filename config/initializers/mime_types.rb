@@ -6,3 +6,14 @@
 Mime::Type.register "video/mp4", :mp4
 Mime::Type.register "video/ogg", :ogv
 Mime::Type.register "video/webm", :webm
+
+Rack::Mime::MIME_TYPES.merge!({
+  ".ogg"     => "application/ogg",
+  ".ogx"     => "application/ogg",
+  ".ogv"     => "video/ogg",
+  ".oga"     => "audio/ogg",
+  ".mp4"     => "video/mp4",
+  ".m4v"     => "video/mp4",
+  ".mp3"     => "audio/mpeg",
+  ".m4a"     => "audio/mpeg"
+})

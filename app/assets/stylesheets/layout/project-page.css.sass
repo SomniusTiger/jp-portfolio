@@ -184,7 +184,6 @@
 
 .project-footer
   font-weight: 200
-  margin-bottom: 6rem
   margin-top: 6rem
   text-align: center
 
@@ -202,6 +201,9 @@
 
 .project-footer-smalltext
   @extend .project-footer-text
+  font-size: 1.2em
+  font-style: normal
+  font-weight: 200
   margin-bottom: 2rem
   max-width: 40rem
   width: 100%
@@ -221,10 +223,10 @@
   
 .project-footer-other-project
   display: block
-  float: left
-  width: 50%
+  width: 100%
 
   a
+    +transition(opacity 200ms $ease-out-quint)
     display: block
     height: 0
     padding-bottom: 43.75%

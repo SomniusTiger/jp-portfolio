@@ -49,17 +49,57 @@
         Thanks for checking out this project!
       .project-footer-text
         <a href="mailto:jpfairchild73@gmail.com">Email me</a> if you want to get in touch!
+      .project-footer-smalltext
+        Or, check out more projects below.
+
       .project-footer-other-projects
-        .project-footer-other-project
-          = link_to :bu_reel do
-            = image_tag "reel2reel.jpg"
-        .project-footer-other-project
-          = link_to :tap_of_war do
-            = image_tag "tapofwarvin.jpg"
-        .project-footer-other-project
-          = link_to :dsb do
-            = image_tag "dsb.jpg", class: "dsb"
-        .project-footer-other-project
-          = link_to :illustrations do
-            = image_tag "brifle.png"
-        .clearfix
+        .project-previews
+          .project-preview
+            = link_to bu_reel_path do
+              = image_tag "reel2reel.jpg", width: "100%"
+              .project-preview-label
+                .project-preview-label-container
+                  %h1.project-preview-title
+                    Brooklyn United
+                  %h2.project-preview-subtitle
+                    MOTION / VISUAL
+
+          .project-preview
+            = link_to tap_of_war_path do
+              = image_tag "tapofwarvin.jpg", width: "100%"
+              .project-preview-label
+                .project-preview-label-container
+                  %h1.project-preview-title
+                    Tap of War
+                  %h2.project-preview-subtitle
+                    IOS / UI / UX
+
+          .project-preview
+            = link_to dsb_path do
+              = image_tag "dsb.jpg", width: "100%", class: "dsb"
+              .project-preview-label
+                .project-preview-label-container
+                  %h1.project-preview-title
+                    Designer Sketchbook
+                  %h2.project-preview-subtitle
+                    UI / UX / CEO
+          
+          .project-preview
+            = link_to illustrations_path do
+              = image_tag "brifle.png", width: "100%"
+              .project-preview-label.black
+                .project-preview-label-container
+                  %h1.project-preview-title
+                    Illustrations
+                  %h2.project-preview-subtitle
+                    VECTOR / VISUAL
+
+          .project-preview
+            = link_to ventures_3d_path do
+              = image_tag "3D/magic_mouse.jpg", width: "100%"
+              .project-preview-label
+                .project-preview-label-container
+                  %h1.project-preview-title
+                    3D Ventures
+                  %h2.project-preview-subtitle
+                    3D / Motion

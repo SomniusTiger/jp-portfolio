@@ -1,13 +1,13 @@
-.project-header.no-text-shadow
+.project-header.text-color-white
   .project-header-title Work
   .project-header-separator="|"
   .project-header-subtitle 3D Ventures
 
 .project
   .project-main-image-container
-    .project-main-image.illustration.contain{style: "background-image: url('" + image_url("brifle.png") + "')"}
+    .project-main-image{style: "background-image: url('" + image_url("3D/magic_mouse.jpg") + "')"}
   .project-down-arrows
-    = image_tag "carat-down-black.svg", width: "100%"
+    = image_tag "carat-down-white.svg", width: "100%"
 
   .project-content
     .project-intro
@@ -43,20 +43,60 @@
 
     .project-footer
       .project-footer-more
-        Thanks for checking out this project!
+        Thanks for checking out this project.
       .project-footer-text
         <a href="mailto:jpfairchild73@gmail.com">Email me</a> if you want to get in touch!
+      .project-footer-smalltext
+        Or, check out more projects below.
+
       .project-footer-other-projects
-        .project-footer-other-project
-          = link_to :bu_reel do
-            = image_tag "reel2reel.jpg"
-        .project-footer-other-project
-          = link_to :tap_of_war do
-            = image_tag "tapofwarvin.jpg"
-        .project-footer-other-project
-          = link_to :dsb do
-            = image_tag "dsb.jpg", class: "dsb"
-        .project-footer-other-project
-          = link_to :vinyl_music do
-            = image_tag "vinylapp.jpg"
-        .clearfix
+        .project-previews
+          .project-preview
+            = link_to bu_reel_path do
+              = image_tag "reel2reel.jpg", width: "100%"
+              .project-preview-label
+                .project-preview-label-container
+                  %h1.project-preview-title
+                    Brooklyn United
+                  %h2.project-preview-subtitle
+                    MOTION / VISUAL
+
+          .project-preview
+            = link_to tap_of_war_path do
+              = image_tag "tapofwarvin.jpg", width: "100%"
+              .project-preview-label
+                .project-preview-label-container
+                  %h1.project-preview-title
+                    Tap of War
+                  %h2.project-preview-subtitle
+                    IOS / UI / UX
+
+          .project-preview
+            = link_to dsb_path do
+              = image_tag "dsb.jpg", width: "100%", class: "dsb"
+              .project-preview-label
+                .project-preview-label-container
+                  %h1.project-preview-title
+                    Designer Sketchbook
+                  %h2.project-preview-subtitle
+                    UI / UX / CEO
+
+          .project-preview
+            = link_to vinyl_music_path do
+              = image_tag "vinylcloseup.jpg", width: "100%"
+              .project-preview-label
+                .project-preview-label-container
+                  %h1.project-preview-title
+                    Vinyl Music
+                  %h2.project-preview-subtitle
+                    IOS / UI / UX
+          
+          .project-preview
+            = link_to illustrations_path do
+              = image_tag "brifle.png", width: "100%"
+              .project-preview-label.black
+                .project-preview-label-container
+                  %h1.project-preview-title
+                    Illustrations
+                  %h2.project-preview-subtitle
+                    VECTOR / VISUAL

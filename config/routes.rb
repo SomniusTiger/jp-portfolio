@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   match via: :get,  '/illustrations'  =>  'projects#illustrations',   as: :illustrations
   match via: :get,  '/tap-of-war'     =>  'projects#tap-of-war',      as: :tap_of_war
   match via: :get,  '/vinyl-music'    =>  'projects#vinyl-music',     as: :vinyl_music
+  match via: :get,  '/3D'             =>  'projects#3D',              as: :ventures_3d
 
 end

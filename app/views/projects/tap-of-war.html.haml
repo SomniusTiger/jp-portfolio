@@ -67,6 +67,16 @@
                     MOTION / VISUAL
 
           .project-preview
+            = link_to podcasts_path do
+              = image_tag "podcasts.jpg", width: "100%"
+              .project-preview-label
+                .project-preview-label-container
+                  %h1.project-preview-title
+                    Podcasts App Redesign
+                  %h2.project-preview-subtitle
+                    UI / UX
+                    
+          .project-preview
             = link_to dsb_path do
               = image_tag "dsb.jpg", width: "100%", class: "dsb"
               .project-preview-label

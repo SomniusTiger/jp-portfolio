@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   match via: :get,  '/tap-of-war'     =>  'projects#tap-of-war',      as: :tap_of_war
   match via: :get,  '/vinyl-music'    =>  'projects#vinyl-music',     as: :vinyl_music
   match via: :get,  '/3D'             =>  'projects#ventures-3d',     as: :ventures_3d
+  match via: :get,  '/podcasts'       =>  'projects#podcasts',        as: :podcasts
 
 end

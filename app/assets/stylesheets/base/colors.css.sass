@@ -10,9 +10,11 @@ $color-grey-lt: #59595b
 $color-peach:   #f6af93
 $color-grey:    #e6e6e6
 $color-orange:  #df5b37
+$color-dark-bg: #414042
 
 // Transparent Colors
-$color-shadow:  rgba(30, 30, 30, 0.4)
+$color-shadow:      rgba(30, 30, 30, 0.4)
+$color-ss-shadow:   rgba(0, 0, 0, 0.4)
 
 // Classes to apply colors
 
@@ -33,6 +35,10 @@ $color-shadow:  rgba(30, 30, 30, 0.4)
   +anti-alias()
   @extend .text-color-white
   background-color: $color-black
+.bg-color-dark
+  +anti-alias()
+  @extend .text-color-white
+  background-color: $color-dark-bg
 .bg-color-blue
   +anti-alias()
   @extend .text-color-white

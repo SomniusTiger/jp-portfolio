@@ -10,39 +10,71 @@
     = image_tag "carat-down-white.svg", width: "100%"
 
   .project-content
-    .project-intro
-      %h1.project-intro-title Podcasts
-      .project-intro-work-types
-        .project-intro-work-type UI
-        .project-intro-work-type-separator &bull;
-        .project-intro-work-type UX 
-
-    .project-section-image
-      = image_tag "vinyl/iphones.jpg", width: "100%", alt: ""
+    .grid-container.bg-color-dark.extra-padding
+      .grid-half
+        .project-intro
+          = image_tag "podcasts/podcast_icon.png", class: "project-intro-image", alt: ""
+          %h1.project-intro-title Podcasts
+          .project-intro-work-types.small
+            .project-intro-work-type UI
+            .project-intro-work-type-separator &bull;
+            .project-intro-work-type UX 
+          .project-intro-descript.small.black
+            I love listening to Podcasts. Podcasts like Radiolab, The Collective, and Ted Talks are eye opening and among my favorites. Unfortunately there doesn’t seem to be a well designed Podcast app on iOS for the serial podcast listener (pun intended). Below are screen shots of the current Apple made app, my thoughts and concerns, and my solutions to many of the problems I think it has.
+      .grid-half
+        .project-screenshots-2
+          = image_tag "podcasts/Main_Page.jpg", class: "project-screenshot", alt: ""
+          = image_tag "podcasts/Collective_downloaded.jpg", class: "project-screenshot", alt: ""
 
     %section.project-section
-      .project-section-title 
-        The Idea
+      .grid-container.align-top
+        .grid-half
+          .project-section-title.small.screenshots-label
+            iOS Podcasts
+          .project-screenshots-2
+            = image_tag "podcasts/IOS_unplayed.jpg", class: "project-screenshot", alt: ""
+            = image_tag "podcasts/IOS_options.jpg", class: "project-screenshot", alt: ""
+
+        .grid-half
+          .project-section-title.small 
+            The Problem
+          .project-section-descript.small
+            When I design anything, I think about problems that need to be solved. Either in an app I’m remaking or starting from scratch, my process of design starts by defining and designing around problems. When you look at the Apple default Podcast app, many of the features and workflow can be improved.
+          .project-section-title.small 
+            Downloading
+          .project-section-descript.small
+            One major pain point I found myself loathing about the app was an easy way to sort downloaded and un-downloaded episodes of a podcast. Take Radiolab for instance: the two lists are “unplayed” and “feed.” Downloading the entire feed of a podcast is wasting storage space and impossible for huge podcasts like Ted Talks. Yet I can’t view only the podcasts I’ve downloaded, I can only see an icon for un-downloaded and episodes I haven’t listened to yet. If I save an episode, where does it go? Much of the fuctionality just doesn’t make sense. 
+
+    %section.project-section
+      .project-section-title.small 
+        My Wireframes
       .project-section-descript
-        I have always wanted to make a music app. I redid the Spotify app some years ago and I keep my eyes on all music apps coming out on iOS. The huge difference with this app is the ability rewind and fast forward a song by spinning the vinyl.
+        I prioritized a top tab bar that lets you see episodes you have downloaded so you can easily download the podcasts you want to listen to, and remove them when you are done. You can also see how many episodes you have downloaded from the main screen. A download page alerts you when new episodes of podcasts you follow come out.  
 
-    %section.project-section
-      .project-section-image
-        = image_tag "vinyl/icons.png", width: "100%", alt: ""
+      .project-screenshots-3
+        = image_tag "podcasts/_wireframe_main.jpg", class: "project-screenshot", alt: ""
+        = image_tag "podcasts/_wireframe_radiolab_all.jpg", class: "project-screenshot", alt: ""
+        = image_tag "podcasts/_wireframe_radiolab_downloaded.jpg", class: "project-screenshot", alt: ""
+        = image_tag "podcasts/_wireframe_sidenav.jpg", class: "project-screenshot", alt: ""
+        = image_tag "podcasts/_wireframe_browse.jpg", class: "project-screenshot", alt: ""
+        = image_tag "podcasts/_wireframe_subscriptions.jpg", class: "project-screenshot", alt: ""
 
-    %section.project-section
-      .project-section-small-grid
-        .project-section-half
-          .project-section-image
-            %video{:autoplay=>true, :controls=>true, :loop=>true, :poster=>"#{image_url 'vinyl/vinyl-poster-img.jpg'}"}
-              %source{:src=>"#{image_url 'https://fat.gfycat.com/MealyBreakableAmericanpainthorse.mp4'}", :type=>"video/mp4"}
-              %source{:src=>"#{image_url 'https://fat.gfycat.com/MealyBreakableAmericanpainthorse.webm'}", :type=>"video/webm"}
-              Looks like your browser doesn't support HTML5 video! Go download an up-to-date browser.
-        .project-section-half
-          .project-section-descript
-            Spinning an album to rewind and fast forward is what separates this app from any other music app. This unique feature both saves space and is easier to use.
-          .project-section-descript
-            Being able to spin the album instead of using a finnicky slider gives this app a ton more visual breathing room than other music apps. For example, Spotify doesn’t even put the volume bar in the song screen because there isn’t enough space. 
+    %section.project-section.bg-color-dark.extra-padding
+      .project-section-title.small 
+        The Dark Side
+      .project-section-descript
+        I feel like there is a lack of dark interfaces in apps right now. It’s getting better, Spotify recently joined the dark side, but there could be so many clean dark interfaces if more people tried out dark UI. I also went with a blue accent color and stuck to the apple full dot = unplayed idea.
+
+      .project-screenshots-3
+        = image_tag "podcasts/Main_Page.jpg", class: "project-screenshot", alt: ""
+        = image_tag "podcasts/Radio_Lab_all.jpg", class: "project-screenshot", alt: ""
+        = image_tag "podcasts/Radio_Lab_downloaded.jpg", class: "project-screenshot", alt: ""
+        = image_tag "podcasts/Collective_downloaded.jpg", class: "project-screenshot", alt: ""
+        = image_tag "podcasts/Collective_Selected.jpg", class: "project-screenshot", alt: ""
+        = image_tag "podcasts/Collective_Remove.jpg", class: "project-screenshot", alt: ""
+        = image_tag "podcasts/side_nav.jpg", class: "project-screenshot", alt: ""
+        = image_tag "podcasts/Browse.jpg", class: "project-screenshot", alt: ""
+        = image_tag "podcasts/play.jpg", class: "project-screenshot", alt: ""
 
     .project-footer
       .project-footer-more
@@ -93,7 +125,7 @@
                     Vinyl Music
                   %h2.project-preview-subtitle
                     IOS / UI / UX
-                    
+
           .project-preview
             = link_to illustrations_path do
               = image_tag "brifle.png", width: "100%"

@@ -112,7 +112,7 @@
     text-align: right
 
   .project-screenshot
-    width: 40%
+    width: 41%
 
 .project-screenshots-3
   text-align: center
@@ -134,7 +134,7 @@
   max-width: 18.75rem
 
 .project-section
-  padding: 6rem 0
+  padding: 3rem 0
   text-align: left
 
   a
@@ -245,8 +245,16 @@
 
 .project-footer
   font-weight: 200
-  margin-top: 6rem
+  padding-top: 6rem
   text-align: center
+
+  &.dark
+    color: $color-white
+    background-color: $color-darker
+
+    .project-footer-more
+      +opacity(0.6)
+      color: $color-white
 
 .project-footer-text
   +box-sizing(border-box)
@@ -261,12 +269,13 @@
     font-weight: bold
 
 .project-footer-smalltext
-  @extend .project-footer-text
   font-size: 1.2em
   font-style: normal
   font-weight: 200
-  margin-bottom: 2rem
+  line-height: 1.2em
+  margin: 0 auto
   max-width: 40rem
+  padding-bottom: 6rem
   width: 100%
 
 .project-footer-more
@@ -277,7 +286,6 @@
   padding: 0 1.2rem
 
 .project-footer-other-projects
-  margin-top: 6rem
   text-align: center
   width: 100%
 

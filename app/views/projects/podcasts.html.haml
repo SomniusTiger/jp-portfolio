@@ -1,7 +1,7 @@
 .project-header.text-color-white
   .project-header-title Work
   .project-header-separator="|"
-  .project-header-subtitle Podcasts App
+  .project-header-subtitle Podcasts
 
 .project
   .project-main-image-container
@@ -46,12 +46,12 @@
           .project-section-descript.small-text.small-width
             One major pain point I found myself loathing about the app was an easy way to sort downloaded and un-downloaded episodes of a podcast. Take Radiolab for instance: the two lists are “unplayed” and “feed.” Downloading the entire feed of a podcast is wasting storage space and impossible for huge podcasts like Ted Talks. Yet I can’t view only the podcasts I’ve downloaded, I can only see an icon for un-downloaded and episodes I haven’t listened to yet. If I save an episode, where does it go? Much of the fuctionality just doesn’t make sense. 
 
+    .project-section-title.small 
+      My Wireframes
+    .project-section-descript.small-text
+      I prioritized a top tab bar that lets you see episodes you have downloaded so you can easily download the podcasts you want to listen to, and remove them when you are done. You can also see how many episodes you have downloaded from the main screen. A download page alerts you when new episodes of podcasts you follow come out.  
+      
     %section.project-section
-      .project-section-title.small 
-        My Wireframes
-      .project-section-descript.small-text
-        I prioritized a top tab bar that lets you see episodes you have downloaded so you can easily download the podcasts you want to listen to, and remove them when you are done. You can also see how many episodes you have downloaded from the main screen. A download page alerts you when new episodes of podcasts you follow come out.  
-
       .project-screenshots-3
         = image_tag "podcasts/_wireframe_main.jpg", class: "project-screenshot", alt: ""
         = image_tag "podcasts/_wireframe_radiolab_all.jpg", class: "project-screenshot", alt: ""
@@ -77,7 +77,7 @@
         = image_tag "podcasts/Browse.jpg", class: "project-screenshot", alt: ""
         = image_tag "podcasts/play.jpg", class: "project-screenshot", alt: ""
 
-    .project-footer
+    .project-footer.dark
       .project-footer-more
         Thanks for checking out this project!
       .project-footer-text
@@ -85,64 +85,64 @@
       .project-footer-smalltext
         Or, check out more projects below.
 
-      .project-footer-other-projects
-        .project-previews
-          .project-preview
-            = link_to bu_reel_path do
-              = image_tag "reel2reel.jpg", width: "100%"
-              .project-preview-label
-                .project-preview-label-container
-                  %h1.project-preview-title
-                    Brooklyn United
-                  %h2.project-preview-subtitle
-                    MOTION / VISUAL
+    .project-footer-other-projects
+      .project-previews
+        .project-preview
+          = link_to bu_reel_path do
+            = image_tag "reel2reel.jpg", width: "100%"
+            .project-preview-label
+              .project-preview-label-container
+                %h1.project-preview-title
+                  Brooklyn United
+                %h2.project-preview-subtitle
+                  MOTION / VISUAL
 
-          .project-preview
-            = link_to tap_of_war_path do
-              = image_tag "tapofwarvin.jpg", width: "100%"
-              .project-preview-label
-                .project-preview-label-container
-                  %h1.project-preview-title
-                    Tap of War
-                  %h2.project-preview-subtitle
-                    IOS / UI / UX
+        .project-preview
+          = link_to tap_of_war_path do
+            = image_tag "tapofwarvin.jpg", width: "100%"
+            .project-preview-label
+              .project-preview-label-container
+                %h1.project-preview-title
+                  Tap of War
+                %h2.project-preview-subtitle
+                  IOS / UI / UX
 
-          .project-preview
-            = link_to dsb_path do
-              = image_tag "dsb.jpg", width: "100%", class: "dsb"
-              .project-preview-label
-                .project-preview-label-container
-                  %h1.project-preview-title
-                    Designer Sketchbook
-                  %h2.project-preview-subtitle
-                    UI / UX / CEO
-          
-          .project-preview
-            = link_to vinyl_music_path do
-              = image_tag "vinylcloseup.jpg", width: "100%"
-              .project-preview-label
-                .project-preview-label-container
-                  %h1.project-preview-title
-                    Vinyl Music
-                  %h2.project-preview-subtitle
-                    IOS / UI / UX
+        .project-preview
+          = link_to dsb_path do
+            = image_tag "dsb.jpg", width: "100%", class: "dsb"
+            .project-preview-label
+              .project-preview-label-container
+                %h1.project-preview-title
+                  Designer Sketchbook
+                %h2.project-preview-subtitle
+                  UI / UX / CEO
+        
+        .project-preview
+          = link_to vinyl_music_path do
+            = image_tag "vinylcloseup.jpg", width: "100%"
+            .project-preview-label
+              .project-preview-label-container
+                %h1.project-preview-title
+                  Vinyl Music
+                %h2.project-preview-subtitle
+                  IOS / UI / UX
 
-          .project-preview
-            = link_to illustrations_path do
-              = image_tag "brifle.png", width: "100%"
-              .project-preview-label.black
-                .project-preview-label-container
-                  %h1.project-preview-title
-                    Illustrations
-                  %h2.project-preview-subtitle
-                    VECTOR / VISUAL
+        .project-preview
+          = link_to illustrations_path do
+            = image_tag "brifle.png", width: "100%"
+            .project-preview-label.black
+              .project-preview-label-container
+                %h1.project-preview-title
+                  Illustrations
+                %h2.project-preview-subtitle
+                  VECTOR / VISUAL
 
-          .project-preview
-            = link_to ventures_3d_path do
-              = image_tag "3D/magic_mouse.jpg", width: "100%"
-              .project-preview-label
-                .project-preview-label-container
-                  %h1.project-preview-title
-                    3D Ventures
-                  %h2.project-preview-subtitle
-                    3D / Motion
+        .project-preview
+          = link_to ventures_3d_path do
+            = image_tag "3D/magic_mouse.jpg", width: "100%"
+            .project-preview-label
+              .project-preview-label-container
+                %h1.project-preview-title
+                  3D Ventures
+                %h2.project-preview-subtitle
+                  3D / Motion

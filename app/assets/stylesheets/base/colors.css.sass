@@ -10,7 +10,8 @@ $color-grey-lt: #59595b
 $color-peach:   #f6af93
 $color-grey:    #e6e6e6
 $color-orange:  #df5b37
-$color-dark-bg: #414042
+$color-dark:    #414042
+$color-darker:  #323232
 
 // Transparent Colors
 $color-shadow:      rgba(30, 30, 30, 0.4)
@@ -25,6 +26,8 @@ $color-ss-shadow:   rgba(0, 0, 0, 0.4)
   color: $color-black
 .text-color-grey
   color: $color-grey-lt
+.text-color-dark
+  color: $color-dark
 
 // Background Colors
 .bg-color-white
@@ -38,7 +41,7 @@ $color-ss-shadow:   rgba(0, 0, 0, 0.4)
 .bg-color-dark
   +anti-alias()
   @extend .text-color-white
-  background-color: $color-dark-bg
+  background-color: $color-darker
 .bg-color-blue
   +anti-alias()
   @extend .text-color-white

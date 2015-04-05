@@ -44,7 +44,7 @@
           .project-section-title.small 
             Downloading
           .project-section-descript.small-text.small-width
-            One major pain point I found myself loathing about the app was an easy way to sort downloaded and un-downloaded episodes of a podcast. Take Radiolab for instance: the two lists are “unplayed” and “feed.” Downloading the entire feed of a podcast is wasting storage space and impossible for huge podcasts like Ted Talks. Yet I can’t view only the podcasts I’ve downloaded, I can only see an icon for un-downloaded and episodes I haven’t listened to yet. If I save an episode, where does it go? Much of the fuctionality just doesn’t make sense. 
+            One major pain point I found myself loathing about the app was an easy way to sort downloaded and un-downloaded episodes of a podcast. Take Radiolab for instance: the two lists are “unplayed” and “feed.” Downloading the entire feed of a podcast is wasting storage space and impossible for huge podcasts like Ted Talks. Yet I can’t view only the podcasts I’ve downloaded, I can only see an icon for un-downloaded and episodes I haven’t listened to yet. If I save an episode, where does it go? Much of the functionality just doesn’t make sense. 
 
     .project-section-title.small 
       My Wireframes
@@ -56,23 +56,42 @@
         = image_tag "podcasts/_wireframe_main.jpg", class: "project-screenshot", alt: ""
         = image_tag "podcasts/_wireframe_radiolab_all.jpg", class: "project-screenshot", alt: ""
         = image_tag "podcasts/_wireframe_radiolab_downloaded.jpg", class: "project-screenshot", alt: ""
+
+    .project-section-title.small 
+      Subscriptions
+    .project-section-descript.small-text
+      I added a subscription page much like Youtube and Vine to let people easily keep up with new podcasts in their favorite series. Also in the side bar is a favorites page, so people can keep track of their favorite episodes or episodes they want to share with friends.
+
+    %section.project-section
+      .project-screenshots-3
         = image_tag "podcasts/_wireframe_sidenav.jpg", class: "project-screenshot", alt: ""
         = image_tag "podcasts/_wireframe_browse.jpg", class: "project-screenshot", alt: ""
         = image_tag "podcasts/_wireframe_subscriptions.jpg", class: "project-screenshot", alt: ""
 
-    %section.project-section.bg-color-dark
+    %section.project-section.bg-color-dark.overlap
       .project-section-title.small 
         The Dark Side
       .project-section-descript.small-text
         I feel like there is a lack of dark interfaces in apps right now. It’s getting better, Spotify recently joined the dark side, but there could be so many clean dark interfaces if more people tried out dark UI. I also went with a blue accent color and stuck to the apple full dot = unplayed idea.
 
+    %section.project-section.bg-color-dark
       .project-screenshots-3
         = image_tag "podcasts/Main_Page.jpg", class: "project-screenshot", alt: ""
         = image_tag "podcasts/Radio_Lab_all.jpg", class: "project-screenshot", alt: ""
         = image_tag "podcasts/Radio_Lab_downloaded.jpg", class: "project-screenshot", alt: ""
+
+      .project-section-descript.small-text.center
+        This is how users un-download specific episodes from the downloaded list.
+
+      .project-screenshots-3
         = image_tag "podcasts/Collective_downloaded.jpg", class: "project-screenshot", alt: ""
         = image_tag "podcasts/Collective_Selected.jpg", class: "project-screenshot", alt: ""
         = image_tag "podcasts/Collective_Remove.jpg", class: "project-screenshot", alt: ""
+
+      .project-section-descript.small-text.center
+        The blue dot next to subscriptions lets you know new episodes are waiting.
+
+      .project-screenshots-3
         = image_tag "podcasts/side_nav.jpg", class: "project-screenshot", alt: ""
         = image_tag "podcasts/Browse.jpg", class: "project-screenshot", alt: ""
         = image_tag "podcasts/play.jpg", class: "project-screenshot", alt: ""

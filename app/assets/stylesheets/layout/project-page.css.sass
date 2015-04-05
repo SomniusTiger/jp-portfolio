@@ -137,6 +137,10 @@
   padding: 3rem 0
   text-align: left
 
+  &.overlap
+    margin-top: -11rem
+    padding-top: 12rem
+
   a
     +transition(opacity 300ms $ease-out-quint)
     font-weight: 500
@@ -203,6 +207,13 @@
     +opacity(0.6)
     font-size: 1em
     line-height: 1.6em
+
+  &.center
+    margin: 0 auto
+    padding:
+      bottom: 3rem
+      top: 3rem
+    text-align: center
 
   &.small-width
     max-width: 32rem

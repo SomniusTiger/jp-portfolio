@@ -4,9 +4,9 @@ lock '3.2.1'
 set :application, 'jp_portfolio'
 set :repo_url, 'git@bitbucket.org:somnius/jp-portfolio.git'
 set :branch, 'master'
-set :deploy_to, '/var/www/rails-projects/jp-portfolio'
+set :deploy_to, '/var/www/rails/jp_portfolio'
 
-SSHKit.config.command_map[:rake]  = "bundle exec rake" 
+SSHKit.config.command_map[:rake]  = "bundle exec rake"
 SSHKit.config.command_map[:rails] = "bundle exec rails"
 
 # Default branch is :master
